@@ -1,0 +1,168 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: serif;
+}
+
+title-image {
+    display: flex;
+    justify-content: center;
+    min-height: 75vh;
+    background-size: cover;
+    background-image: url("../images/blog/title_image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+title-image h1 {
+    margin: 200px auto;
+    color: white;
+}
+
+
+/* main style */
+
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+
+/* end of main style */
+
+
+/*content style*/
+
+
+/* table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+td {
+    border: 10px solid white;
+    padding: 0px 40px 10px 40px;
+    text-align: center;
+    vertical-align: top;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+td img {
+    width: 500px;
+    height: 200px;
+} */
+
+blogs {
+    width: 80%;
+    margin: 5% auto;
+}
+
+blog h2 {
+    padding-left: 50px;
+    font-family: cursive;
+}
+
+h2 img {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+h2 img:hover {
+    background-color: #049edb;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+content {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#84bcdc, #fff);
+}
+
+content p {
+    text-align: justify;
+    padding: 0 50px;
+    font: 1.1em solid black monospace;
+}
+
+content img {
+    width: 500px;
+    height: 250px;
+}
+
+
+/* end of content style */
+
+
+/* tablet-1300px*/
+
+@media screen and (max-width:1300px) {
+    filter {
+        flex-direction: row;
+        margin: 0 auto;
+        width: 1300px;
+        padding-bottom: 10px;
+    }
+    td {
+        padding: 0px 60px 10px 60px;
+    }
+    td img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+
+/* tablet -700px*/
+
+
+/* @media screen and (max-width:700px) {
+    title-image h1 {
+        font-size: 20px;
+        height: 25px;
+    }
+    td {
+        display: inline-block;
+        margin: 10px auto;
+    }
+    td img {
+        width: 150px;
+        height: auto;
+    }
+} */
+
+
+/* mobile */
+
+
+/* @media screen and (max-width:415px) {
+    .container {
+        min-height: 120%;
+    }
+    title-image h1 {
+        min-height: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 1em;
+        margin: auto .7em;
+    }
+    table {
+        margin: 10px auto;
+    }
+} */
