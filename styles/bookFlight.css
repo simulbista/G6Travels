@@ -1,0 +1,78 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: url("../images/bookflightbg.png");
+    font-family: "Sorts Mill Goudy", serif;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 42px;
+}
+main div:first-child{
+    width: 67%;
+}
+main img{
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+}
+.bookTicket{
+    height: 530px;
+    width: 430px;
+    background-color: aliceblue;
+    margin: 17px;
+    align-self: center;
+    border-radius: 6px;
+    color: #049edb;
+    box-shadow: 0 0 5px #049edb;
+}
+.bookTicket h2{
+    text-align: center;
+    font-weight: 400px;
+}
+form{
+    padding: 20px;
+}
+form input, form select{
+    border-color: #049edb;
+    box-shadow: 0 0 2px #049edb;
+    float: right;
+    width: 250px;
+    height: 20px;
+}
+form input[type="radio"],form input[type="range"]{
+    box-shadow: none !important;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: lightblue;
+    height:20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    background-color: #049edb;
+    opacity: 0.5;
+    width: 10px;
+    height: 26px;
+}
+#submit{
+    width: 390px;
+    height: 40px;
+    background-color: #049edb;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 6px;
+    font-size: 16px;
+}

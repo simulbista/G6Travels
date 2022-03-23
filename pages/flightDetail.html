@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>G6 Travels</title>
+        <link rel="stylesheet" href="../styles/header-footer.css">
+        <link rel="stylesheet" href="../styles/flightDetail.css">
+        <link rel="shortcut icon" href="../images/sample-logo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <!-- header section -->
+            <header>
+                <identity>
+                    <img src="../images/sample-logo.png" alt="G6 Travels Logo">
+                    <h1>G6 Travels</h1>
+                </identity>
+                <sign-in>
+                    <h2>My Profile</h2>
+                    <img src="../images/my-profile.png" alt="profile_logo">
+                </sign-in>
+            </header>
+            <!-- menu bar -->
+            <menu>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </menu>
+            <!-- main -->
+            <main>
+                <div>
+                    <h3 class="flightAirline">Air Aisa I5 | 740 <p>New Delhi to Bengaluru, 15 Mar</p> </h3>  
+                    
+                </div>
+                <div class="tab">
+                    <button class="tablinks">Flight Details</button>
+                    <button class="tablinks">Fare Summary</button>
+                    <button class="tablinks">Cancellation</button>
+                    <button class="tablinks">Date Change</button>
+                </div>
+                <div class="flightCard" class="tabcontent">
+                        <div class="flightDeparture">
+                            <div class="flightDetailHeading">08:00</div>
+                            <div>Tue 15 Mar 22</div>
+                            <div>Terminal 3</div>
+                            <div>New Delhi, India</div>
+                        </div>
+                        <div class="flightDuration">
+                            <div>2h 40m</div>
+                            <div><hr></div>
+                        </div>
+                        <div class="flightArrival">
+                            <div class="flightDetailHeading">10:40</div>
+                            <div>Tue 15 Mar 22</div>
+                            <div>Bengaluru,India</div>
+                        </div>
+                        <div class="flightBaggage">
+                            <div class="flightDetailHeading">BAGGAGE:</div>
+                            <div>ADULT</div>
+                        </div>
+                        <div class="flightCheckin">
+                            <div class="flightDetailHeading">CHECK IN:</div>
+                            <div>15kgs (1 piece only)</div>
+                        </div>
+                        <div class="flightCabin">
+                            <div >CABIN:</div>
+                            <div>7kgs (1 piece only)</div>
+                        </div>
+                        <!-- <table class="fareBreakupTable">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Fare Breakup</th>
+                                    <th ></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Base Fare</td>
+                                    <td>$300</td>
+                                </tr>
+                                <tr>
+                                    <td>Surcharges</td>
+                                    <td>$50</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th id="total">TOTAL</th>
+                                    <td>$350</td>
+                                </tr>
+                            </tfoot>
+                        </table> -->
+                        <!-- <table class="otherDetailsTable">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Time frame (From Scheduled flight departure)</th>
+                                    <th>Airline Fee + G6T fee (Per passenger)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0 hours to 2 hours*</td>
+                                    <td>ADULT : Non Refundable</td>
+                                </tr>
+                                <tr>
+                                    <td>2 hours to 3 days*</td>
+                                    <td>ADULT : $ 3,500 + $ 300</td>
+                                </tr>
+                                <tr>
+                                    <td>3 days to 365 days*</td>
+                                    <td>ADULT : $ 3,000 + $ 300</td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                        <!-- <span>*From the Date of Departure</span> -->
+                        <!-- <table class="otherDetailsTable">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Time frame (From Scheduled flight departure)</th>
+                                    <th>Airline Fee + G6T Fee + Fare difference</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0 hours to 2 hours*</td>
+                                    <td>ADULT : Non Changeable</td>
+                                </tr>
+                                <tr>
+                                    <td>2 hours to 3 days*</td>
+                                    <td>ADULT : $ 3,000 + $ 300 + Fare difference</td>
+                                </tr>
+                                <tr>
+                                    <td>3 days to 365 days*</td>
+                                    <td>ADULT: $ 2,500 + $ 300 + Fare difference</td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                        <!-- <span>*From the Date of Departure</span> -->
+                </div>  
+                <div>
+                    <input type="submit" id="bookTicket" value="Book Ticket">
+                </div>     
+            </main>
+            <!-- footer section -->
+            <footer>
+                <quote>Take memories, leave footprints!</quote>
+                <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
+                <social-media>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_logo.png" alt="insta_url"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_logo.png" alt="facebook_url "></a>
+                    <a href="https://twitter.com/ " target="_blank"><img src="../images/twitter_logo.png" alt="twitter_url"></a>
+                </social-media>
+            </footer>
+        </div>  
+    </body>
+</html>
