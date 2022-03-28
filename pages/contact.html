@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Task List6 (responsive page)</title>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <identity>
+                <img src="images/main/Logo-tb.png" alt="site_logo">
+                <h1>G6 Travels</h1>
+            </identity>
+            <sign-in>
+                <h2>My Profile</h2>
+                <img src="images/main/my-profile.png" alt="profile_logo">
+            </sign-in>
+        </header>
+        <!-- menu bar -->
+        <menu>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </menu>
+
+        <div class="container-fluid p-30" >
+           <div class="row">
+              <div class="col-sm-4">
+                  <h1>About the detail</h1>
+                  <h4>Address</h4>
+                  <p>Ontario Science Centre 770 Don Mills Rd,<br />
+                  Toronto, ON M3C 1T3 Canada</p>
+                  <br />
+                  <p>Email: hello@travelg6@gmail.com</p>
+                  <p>Call us:  +1  (416) 243344</p>
+                  <p><a href="#">Facebook</a></p>
+                  <p><a href="#">Instagram</a></p>
+              </div>
+              <div class="col-sm-8">
+                <h1>For contact us fill the form</h1>
+                <form action="#"  id="contact-form" >
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <input type="text" placeholder=" Don't user number" id="name" 
+                        onchange="validateName()"  >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" placeholder="Email" class="form-control" id="email" 
+                        onchange="ValidateEmail()">
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <label>Message:</label>
+                        <textarea name="text" id="message" rows="6" spellcheck="false" placeholder="Comments" ></textarea>
+                    </div>
+                    <br>
+                    <div id="submit">
+                        <input type="submit" id="contact-submit" class="btn btn-success" value="Submit" >
+                        <input type="submit" id="contact-submit" class="btn btn-danger" value="Reset">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <quote>Take memories, leave footprints!</quote>
+        <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
+        <social-media>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/main/instagram_logo.png" alt="insta_url"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/main/facebook_logo.png" alt="facebook_url "></a>
+            <a href="https://twitter.com/ " target="_blank"><img src="images/main/twitter_logo.png" alt="twitter_url"></a>
+        </social-media>
+    </footer>
+
+</div>
+<script type="text/javascript" src="js/contact.js"></script>
+</body>
+
+</html>
