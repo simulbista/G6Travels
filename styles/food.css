@@ -4,6 +4,7 @@
     max-width: 1400px;
     margin: 0 auto;
     min-height: 100vh;
+    background: #1d212b;
 }
 
 body {
@@ -14,14 +15,14 @@ body {
 
 title-image h1 {
     width: fit-content;
-    margin: 50px auto;
+    margin: 10px auto;
     color: #049edb;
     font-family: cursive;
     font-weight: 100;
 }
 
 
-/* main style */
+/* main style*/
 
 main {
     padding: 0;
@@ -85,6 +86,17 @@ food4 {
 
 food5 {
     background-image: url("../images/food/italian\ food.jpg");
+}
+
+
+/* countdown timer */
+
+#count-down,
+info {
+    margin: 0 auto;
+    font-size: large;
+    color: white;
+    font-weight: bold;
 }
 
 

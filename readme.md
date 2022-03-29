@@ -8,10 +8,10 @@
 
 - [x] 
 - [x] 
-- [x] 
+- Food, Blog and Restaurants pages - Simul
 
 ## Learning curve and challenges
-
+javascript
 - 
 - 
 
@@ -20,3 +20,4 @@
 - favicons & images: 
 https://www.flaticon.com/
 https://www.pexels.com/
+https://unsplash.com/
