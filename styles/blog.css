@@ -89,6 +89,27 @@ h2 img:hover {
     padding: 2px;
 }
 
+
+/* like button */
+
+.unlike {
+    background: url(../images/blog/like_button_no_bg.png) no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+.like {
+    background: url(../images/blog/like_button_black.png) no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
 content {
     display: flex;
     justify-content: space-between;

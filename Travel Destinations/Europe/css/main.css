@@ -1,0 +1,156 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: serif;
+}
+
+title-image {
+    display: flex;
+    justify-content: center;
+    min-height: 75vh;
+    background-size: cover;
+    background-image: url("../images/Europe.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+title-image h1 {
+    margin: 200px auto;
+    color: white;
+    max-height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* main style */
+
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+
+/* end of main style */
+
+
+/* filter(nav) style */
+
+filter {
+    min-width: 200px;
+    background-color: #42503f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+filter ul {
+    margin-top: 40px;
+    list-style: none;
+}
+
+filter ul li {
+    color: yellow;
+}
+
+filter ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* end of filter(nav) style */
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    border: 10px solid white;
+    padding: 0px 40px 10px 40px;
+    text-align: center;
+    vertical-align: top;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+td img {
+    width: 250px;
+    height: 100px;
+}
+
+
+/* end of content style */
+
+
+/* tablet */
+
+@media screen and (max-width:1300px) {
+    filter {
+        flex-direction: row;
+        margin: 0 auto;
+        width: 1300px;
+        padding-bottom: 10px;
+    }
+    td {
+        padding: 0px 60px 10px 60px;
+    }
+    td img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+
+/* tablet */
+
+@media screen and (max-width:700px) {
+    title-image h1 {
+        font-size: 20px;
+        height: 25px;
+    }
+    filter {
+        flex-direction: row;
+        margin: 0 auto;
+        width: 700px;
+        padding-bottom: 10px;
+    }
+    td {
+        padding: 0px 10px 10px 10px;
+    }
+    td img {
+        width: 80px;
+        height: auto;
+    }
+}
+
+
+/* mobile */
+
+@media screen and (max-width:415px) {
+    .container {
+        min-height: 100%;
+    }
+    title-image h1 {
+        min-height: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 1em;
+        margin: auto .7em;
+    }
+    filter {
+        padding-right: 2.5em;
+    }
+}
