@@ -36,27 +36,29 @@
             <main>
                 <div>
                     <img src="../images/flight-left-bg.png" alt="flight_image">
+                    <a class="goBack" onclick="goBackToLanding()">Go back</a>
                 </div>
                 <div class="bookTicket">
                     <h2>Search Flight</h2>
+                    <span id="errorMsg">Please fill all required fields</span>
                     <form name="searchFlightForm" action="">
-                        <input type="radio" name="crust" value="thin">Round Trip<br>
-                        <input type="radio" name="crust" value="deep" checked>One Way<br>
-                        <p>From: <input type="text" id="from" list="fromLinks" required></p>
+                        <input type="radio" name="tripType" value="roundtrip" checked>Round Trip<br>
+                        <input type="radio" name="tripType" value="oneway">One Way<br>
+                        <p>From: <input type="text" id="from" list="fromLinks"></p>
                         <datalist id="fromLinks">
                             <option value="Bengaluru" label="BLR">
                             <option value="Mumbai" label="MUM">
                         </datalist>
-                        <p>To: <input type="text" id="from" list="toLinks" required></p>
+                        <p>To: <input type="text" id="to" list="toLinks"></p>
                         <datalist id="toLinks">
                             <option value="Bengaluru" label="BLR">
                             <option value="Mumbai" label="MUM">
                         </datalist>
-                        <p>Departure: <input type="date" name="depDate" required></p>
-                        <p>Return: <input type="date" name="returnDate" required></p>
-                        <p>No of passengers: <input type="number" max=10 min=1 id="passengerCount" required></p>
+                        <p>Departure: <input type="date" name="depDate" id="depDate"></p>
+                        <p>Return: <input type="date" name="returnDate" id="returnDate"></p>
+                        <p>No of passengers: <input type="number" max=10 min=1 id="passengerCount"></p>
                         <p>Class: 
-                            <select name="class" required>
+                            <select name="class">
                                 <option value="business">Business Class</option>
                                 <option value="economy">Economy</option>
                             </select>
@@ -67,7 +69,7 @@
                                 min="1" max="5000" step="1"><br><br>    
                         </p>
                         
-                        <p><input type="submit" id="submit" value="Search"></p>
+                        <p><input type="submit" id="submit" value="Search" onclick="searchFlights(event)"></p>
                     </form>
                 </div>
             </main>
@@ -82,5 +84,6 @@
                 </social-media>
             </footer>
         </div>  
+        <script src="../javascript/bookFlight.js"></script> 
     </body>
 </html>

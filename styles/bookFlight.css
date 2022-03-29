@@ -41,6 +41,17 @@ main img{
     text-align: center;
     font-weight: 400px;
 }
+.goBack{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+#errorMsg{
+    display: none;
+    color: red;
+    padding-left: 20px;
+}
 form{
     padding: 20px;
 }
@@ -59,7 +70,6 @@ input[type=range] {
     background-color: lightblue;
     height:20px;
 }
-
 input[type="range"]::-webkit-slider-thumb {
      -webkit-appearance: none;
     background-color: #049edb;
@@ -75,4 +85,5 @@ input[type="range"]::-webkit-slider-thumb {
     border: 1px solid aliceblue;
     border-radius: 6px;
     font-size: 16px;
+    cursor: pointer;
 }

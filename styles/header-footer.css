@@ -26,7 +26,7 @@ header sign-in {
     justify-content: space-between;
     background-color: #049edb;
     border-radius: 25px;
-    padding: 0 1em;
+    padding: 0 10px;
     color: white;
     font-size: 1.1em;
 }
@@ -115,6 +115,9 @@ footer {
     font-weight: 800;
     background-color: #049edb;
     padding: 20px;
+    position: fixed;	
+    bottom: 0;	
+    width: 100%;
 }
 
 footer social-media a img {

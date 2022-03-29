@@ -61,3 +61,10 @@ main{
     font-size: 16px;
     cursor: pointer;
 }
+.goBack{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    padding-left: 10px;
+    padding-top: 10px;
+}
