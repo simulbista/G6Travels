@@ -7,11 +7,11 @@
 ## Tasks
 
 - [x] 
-- [x] 
+- Search Flight, flight list and flight details - Mira
 - Food, Blog and Restaurants pages - Simul
 
 ## Learning curve and challenges
-javascript
+- javascript
 - 
 - 
 
