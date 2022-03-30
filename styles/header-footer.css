@@ -115,9 +115,9 @@ footer {
     font-weight: 800;
     background-color: #049edb;
     padding: 20px;
-    position: fixed;	
-    bottom: 0;	
-    width: 100%;
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
 }
 
 footer social-media a img {
