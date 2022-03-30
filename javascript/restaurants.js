@@ -10,5 +10,3 @@ img.addEventListener('mouseover', () => {
 img.addEventListener('mouseleave', () => {
     img.style.backgroundImage = `url('../images/restaurants/title_image.jpg')`;
 })
-
-console.log(img1);

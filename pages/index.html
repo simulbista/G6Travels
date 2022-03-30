@@ -6,107 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome G6 Travel</title>
-    <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/slider.css">
+    <link rel="shortcut icon" href="../images/logos/Logo-tb.png">
 </head>
 
 <body>
     <div class="container">
         <header>
             <identity>
-                <img src="images/main/Logo-tb.png" alt="site_logo">
+                <img src="../images/main/Logo-tb.png" alt="site_logo">
                 <h1>G6 Travels</h1>
             </identity>
             <sign-in>
                 <h2>My Profile</h2>
-                <img src="images/main/my-profile.png" alt="profile_logo">
+                <img src="../images/main/my-profile.png" alt="profile_logo">
             </sign-in>
         </header>
         <!-- menu bar -->
         <menu>
             <ul>
-                  <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="testimonial.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="../pages/index.html">Home</a></li>
+                <li><a href="../pages/about.html">About Us</a></li>
+                <li><a href="../pages/testimonial.html">Testimonials</a></li>
+                <li><a href="../pages/contact.html">Contact Us</a></li>
             </ul>
         </menu>
-        <div class="container-fluid" >
-         <div class="row">
-            <div class="col-sm-9">
-                <div class="slideshow-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="slideshow-container">
 
-                  <!-- Full-width images with number and caption text -->
-                  <div class="mySlides fade">
-                    <img src="images/slider2.jpg" style="width:100%">
-                    <div class="text">Explore your journery</div>
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <img src="../images/slider2.jpg" style="width:100%">
+                            <div class="text">Explore your journery</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="../images/slider3.jpg" style="width:100%">
+                            <div class="text">Near to beauty</div>
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
                 </div>
-
-                <div class="mySlides fade">
-                    <img src="images/slider3.jpg" style="width:100%">
-                    <div class="text">Near to beauty</div>
+                <div class="col-sm-3">
+                    <div class="mycard">
+                        <h4><a href="#">Travel</a></h4>
+                        <h4><a href="#">Holiday pakage & Activity</a></h4>
+                        <h4><a href="#">Food And Restaurant</a></h4>
+                        <h4><a href="#">Manage Booking</a></h4>
+                    </div>
                 </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <br>
-
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <div class="container-fluid explore">
+            <h2>Explore the world</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="whitecard">
+                        <img src="../images/img1.jpg" class="img-fluid" />
+                        <h4>So much to see, so much to do</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="whitecard">
+                        <img src="../images/img2.jpg" class="img-fluid" />
+                        <h4>You need a change of scenery</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="whitecard">
+                        <img src="../images/img2.jpg" class="img-fluid" />
+                        <h4>Heat up your feet and everything else</h4>
+                    </div>
+                </div>
             </div>
-      </div>
-      <div class="col-sm-3">
-         <div class="mycard">
-             <h4><a href="#">Travel</a></h4>
-             <h4><a href="#">Holiday pakage & Activity</a></h4>
-             <h4><a href="#">Food And Restaurant</a></h4>
-             <h4><a href="#">Manage Booking</a></h4>
-         </div>
-     </div>
-     </div>
+        </div>
+
+        <br />
+        <br />
+        <footer>
+            <quote>Take memories, leave footprints!</quote>
+            <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
+            <social-media>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/main/instagram_logo.png" alt="insta_url"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/main/facebook_logo.png" alt="facebook_url "></a>
+                <a href="https://twitter.com/ " target="_blank"><img src="../images/main/twitter_logo.png" alt="twitter_url"></a>
+            </social-media>
+        </footer>
     </div>
-    <div class="container-fluid explore" >
-        <h2>Explore the world</h2>
-         <div class="row">
-            <div class="col-sm-4">
-                <div class="whitecard">
-                    <img src="images/img1.jpg" class="img-fluid" />
-                    <h4>So much to see, so much to do</h4>
-                </div>
-            </div> 
-            <div class="col-sm-4">
-                <div class="whitecard">
-                    <img src="images/img2.jpg" class="img-fluid" />
-                    <h4>You need a change of scenery</h4>
-                </div>
-            </div> 
-            <div class="col-sm-4">
-                <div class="whitecard">
-                    <img src="images/img2.jpg" class="img-fluid" />
-                    <h4>Heat up your feet and everything else</h4>
-                </div>
-            </div>
-         </div>
-     </div>
-
-<br />
-<br />
-<footer>
-    <quote>Take memories, leave footprints!</quote>
-    <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
-    <social-media>
-        <a href="https://www.instagram.com/" target="_blank"><img src="images/main/instagram_logo.png" alt="insta_url"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/main/facebook_logo.png" alt="facebook_url "></a>
-        <a href="https://twitter.com/ " target="_blank"><img src="images/main/twitter_logo.png" alt="twitter_url"></a>
-    </social-media>
-</footer>
-</div>
 </body>
-<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="../javascript/slider.js"></script>
+
 </html>
