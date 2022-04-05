@@ -12,8 +12,6 @@
 
 ## Learning curve and challenges
 - javascript
-- 
-- 
 
 ## Resources
 
@@ -21,3 +19,4 @@
 https://www.flaticon.com/
 https://www.pexels.com/
 https://unsplash.com/
+https://stackoverflow.com/
