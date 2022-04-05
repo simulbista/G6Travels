@@ -48,25 +48,6 @@
         </title-image>
         <!-- main -->
         <main>
-            <!-- <table>
-                <tr>
-                    <td>
-                        <h2>Pizza Palace</h2>
-                        <p>221B Baker Street, Toronto, Canada</p>
-                        <img src="../restaurants/images/restaurants/pizza_palace.jpg" alt="restaurant1">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>Pizza Palace</h2>
-                        <p>221B Baker Street, Toronto, Canada</p>
-                        <img src="../restaurants/images/restaurants/pizza_palace.jpg" alt="restaurant1">
-                    </td>
-                </tr>
-                <tr>
-                    <td> <button>Read more!</button></td>
-                </tr>
-            </table> -->
             <blogs>
                 <blog>
                     <!-- <h2>My trip to the mountains<img src="../images/blog/like_button_no_bg.png"></h2> -->
@@ -96,6 +77,25 @@
                 </blog>
             </blogs>
             <!-- </blogs> -->
+            <form id="form" action="" method="get">
+                <div>
+                    <h1>CREATE ACCOUNT</h1>
+                    <div class="formelements"><label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Enter your full name.">
+                    </div>
+                    <div class="formelements"><label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Enter your email.">
+                    </div>
+                    <div class="formelements"><label for="password">Password</label>
+                        <input id="password" name="password" type="password">
+                    </div>
+                    <div class="formelements"><label for="passwordagain">Re-Password</label>
+                        <input id="passwordagain" name="passwordagain" type="password">
+                    </div>
+                    <div class="formelements"><button type="submit">Submit</button></div>
+                    <div class="formelements" id="formerror"></div>
+                </div>
+            </form>
         </main>
         <!-- <pagination>
             </pagination> -->
@@ -112,6 +112,7 @@
     </div>
     <!-- js link -->
     <script src="../javascript/blog.js"></script>
+    <script src="../javascript/hamburger-menu.js"></script>
 </body>
 
 </html>

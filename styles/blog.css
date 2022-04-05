@@ -46,31 +46,9 @@ main {
 
 /*content style*/
 
-
-/* table {
-    width: 80%;
-    margin: 0 auto;
-}
-
-td {
-    border: 10px solid white;
-    padding: 0px 40px 10px 40px;
-    text-align: center;
-    vertical-align: top;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-td img {
-    width: 500px;
-    height: 200px;
-} */
-
 blogs {
-    width: 80%;
-    margin: 5% auto;
+    width: 70%;
+    margin: 20px;
 }
 
 blog h2 {
@@ -89,6 +67,44 @@ h2 img:hover {
     border-radius: 5px;
     padding: 2px;
 }
+
+
+/* form section */
+
+form {
+    width: 25%;
+    background-color: #dc740b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formelements {
+    width: 200px;
+    padding: 0.7em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.formelements label {
+    color: #000;
+    font-weight: 700;
+}
+
+#formerror {
+    font-size: .8em;
+    color: #fff;
+}
+
+form h1 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+/* end of form section  */
 
 
 /* like button */
@@ -141,39 +157,64 @@ content img {
         width: 1300px;
         padding-bottom: 10px;
     }
-    td {
-        padding: 0px 60px 10px 60px;
+    main {
+        flex-direction: column;
     }
-    td img {
-        width: 100px;
-        height: auto;
+    blogs {
+        width: auto;
+        margin: 20px;
+    }
+    form {
+        width: auto;
+    }
+    content {
+        display: block;
+        padding-top: 5%;
+    }
+    content img {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        height: 60%;
+        padding-bottom: 5%;
     }
 }
 
 
 /* tablet -700px*/
 
-
-/* @media screen and (max-width:700px) {
+@media screen and (max-width:700px) {
     title-image h1 {
         font-size: 20px;
         height: 25px;
     }
-    td {
-        display: inline-block;
-        margin: 10px auto;
+    main {
+        flex-direction: column;
     }
-    td img {
-        width: 150px;
-        height: auto;
+    blogs {
+        width: auto;
+        margin: 20px;
     }
-} */
+    form {
+        width: auto;
+    }
+    content {
+        display: block;
+        padding-top: 5%;
+    }
+    content img {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        height: 60%;
+        padding-bottom: 5%;
+    }
+}
 
 
 /* mobile */
 
-
-/* @media screen and (max-width:415px) {
+@media screen and (max-width:415px) {
     .container {
         min-height: 120%;
     }
@@ -184,7 +225,7 @@ content img {
         font-size: 1em;
         margin: auto .7em;
     }
-    table {
-        margin: 10px auto;
+    blog h2 {
+        padding-left: 2px;
     }
-} */
+}

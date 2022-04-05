@@ -1,4 +1,4 @@
-Assignment Name: : Project Task List 6
+Assignment Name: : Travel Destinations
 Name: Nilangkumar Joshi
 Student Number: N01496686
 

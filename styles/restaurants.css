@@ -129,8 +129,9 @@ td img {
         padding-bottom: 10px;
     }
     td {
-        display: inline-block;
+        display: block;
         margin: 10px auto;
+        /* width: 100%; */
     }
     td img {
         width: 150px;
