@@ -18,6 +18,10 @@ main{
     justify-content: space-around;
     margin-top: 42px;
 }
+.flightsList{
+    overflow: scroll;
+    height: 390px;
+}
 .flightsList ul{
     list-style-type: none;
 }

@@ -36,100 +36,7 @@
             <a class="goBack" onclick="goBackToSearchFlights()">Go back</a>
             <main>
                 <div class="flightsList">
-                    <ul>
-                        <li>
-                            <a>
-                                <div class="flightCard">
-                                    <span class="flightAirline">IndiGo</span>  
-                                    <div class="flightDeparture">
-                                        <div>04:15</div>
-                                        <div>New Delhi</div>
-                                    </div>
-                                    <div class="flightDuration">
-                                        <div>2h 55m</div>
-                                        <div><hr></div>
-                                    </div>
-                                    <div class="flightArrival">
-                                        <div>7:10</div>
-                                        <div>Bengaluru</div>
-                                    </div>
-                                    <div class="ticketPrice">&#x24;300</div>
-                                    <div>
-                                        <input type="submit" id="bookFlight" value="View Flight" onclick="viewFlight()">
-                                    </div> 
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <div class="flightCard">
-                                    <span class="flightAirline">Lufthansa</span>  
-                                    <div class="flightDeparture">
-                                        <div>22:15</div>
-                                        <div>New Delhi</div>
-                                    </div>
-                                    <div class="flightDuration">
-                                        <div>8h 55m</div>
-                                        <div><hr></div>
-                                    </div>
-                                    <div class="flightArrival">
-                                        <div>8:10</div>
-                                        <div>Munich</div>
-                                    </div>
-                                    <div class="ticketPrice">&#x24;1200</div>
-                                    <div>
-                                        <input type="submit" id="bookFlight" value="View Flight" onclick="viewFlight()">
-                                    </div> 
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <div class="flightCard">
-                                    <span class="flightAirline">Air India</span>  
-                                    <div class="flightDeparture">
-                                        <div>10:15</div>
-                                        <div>Chennai</div>
-                                    </div>
-                                    <div class="flightDuration">
-                                        <div>1h 15m</div>
-                                        <div><hr></div>
-                                    </div>
-                                    <div class="flightArrival">
-                                        <div>11:30</div>
-                                        <div>Kochi</div>
-                                    </div>
-                                    <div class="ticketPrice">&#x24;200</div>
-                                    <div>
-                                        <input type="submit" id="bookFlight" value="View Flight" onclick="viewFlight()">
-                                    </div> 
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <div class="flightCard">
-                                    <span class="flightAirline">Emirates</span>  
-                                    <div class="flightDeparture">
-                                        <div>03:45</div>
-                                        <div>Hyderabad</div>
-                                    </div>
-                                    <div class="flightDuration">
-                                        <div>55m</div>
-                                        <div><hr></div>
-                                    </div>
-                                    <div class="flightArrival">
-                                        <div>4:40</div>
-                                        <div>Bengaluru</div>
-                                    </div>
-                                    <div class="ticketPrice">&#x24;150</div>
-                                    <div>
-                                        <input type="submit" id="bookFlight" value="View Flight" onclick="viewFlight()">
-                                    </div> 
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                    <ul id="flightListUl"></ul>
                 </div>
             </main>
             <!-- footer section -->
@@ -142,7 +49,39 @@
                     <a href="https://twitter.com/ " target="_blank"><img src="../images/twitter_logo.png" alt="twitter_url"></a>
                 </social-media>
             </footer>
-        </div>  
-        <script src="../javascript/flightList.js"></script> 
+        </div>     
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                for(i=0;i<flightData.length;i++){
+                    $("#flightListUl").append(
+                        `<li>
+                            <a>
+                                <div class="flightCard">
+                                    <span class="flightAirline">${flightData[i].name}</span>  
+                                    <div class="flightDeparture">
+                                        <div>${flightData[i].arrival}</div>
+                                        <div>${flightData[i].source}</div>
+                                    </div>
+                                    <div class="flightDuration">
+                                        <div>${flightData[i].duration}</div>
+                                        <div><hr></div>
+                                    </div>
+                                    <div class="flightArrival">
+                                        <div>${flightData[i].departure}</div>
+                                        <div>${flightData[i].destination}</div>
+                                    </div>
+                                    <div class="ticketPrice">&#x24;${flightData[i].rate}</div>
+                                    <div>
+                                        <input type="submit" id="bookFlight" value="View Flight" onclick="viewFlight()">
+                                    </div> 
+                                </div>
+                            </a>
+                        </li>`
+                    );
+                }
+            });
+        </script>
+         <script src="../javascript/flightList.js"></script> 
     </body>
 </html>
