@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel booking</title>
+    <link rel="stylesheet" href="hotel1.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="hotel1.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <identity>
+            <img src="images/logo.png" alt="_logo">
+            <h1>G6 Travels</h1>
+        </identity>
+        <sign-in>
+            <h2>My Profile</h2>
+            <img src="images/my-profile.png" alt="profile_logo">
+        </sign-in>
+    </header>
+    <!-- menu bar -->
+    <menu>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </menu>
+    <main>
+        <div class="hero">
+            <div class="container">
+                <div class= "main-heading">
+                    <h1 class= "title">NICE AND COMFORTABLE PLACE TO STAY</h1>
+                    <h2 class= "subtitile">People will forget what you said, people will forget what you did, but people will never forget how you made them feel</h2>
+                    </div>
+                    <button type = "button" class = "head-btn">GET STARTED</button>
+                </div>
+            </div>
+
+            <section class="services sec-width"  id = "services">
+                <div class="title">
+                    <h2>services</h2>
+                </div>
+                        <div class="service">
+                            <article class="service">
+                                <div class="service-icon">
+                                    <span>
+                                        <i class ="fas fa-utensils"></i>
+                                    </span>
+                                </div>
+                            <div class="service-content">
+                                <h2>Food Services</h2>
+                                    <p id="demo">Food is everything we are. It’s an extension of nationalist feeling, 
+                                    ethnic feeling, your personal history, your province, your region, 
+                                    your tribe, your grandma. It’s inseparable from those from the get-go. 
+                                    Laughter is brightest in the place where food is good. I realized very
+                                    early the power of food to evoke memory, to bring people together, 
+                                    to transport you to other places, and I wanted to be a part of that.
+                                    Food is not rational. Food is culture, habit, craving, and identity.</p>
+                                    <button type ="button" class ="btn" onclick="myFunction() ">Know More</button>    
+                            </div>
+                            </article>
+                            <article class="service">
+                                <div class="service-icon">
+                                    <span>
+                                        <i class ="fas fa-swimming pool"></i>
+                                    </span>
+                                </div>
+                            <div class="service-content">
+                                <h2>Refreshment</h2>
+                                    <p id="demo1">Food is everything we are. It’s an extension of nationalist feeling, 
+                                    ethnic feeling, your personal history, your province, your region, 
+                                    your tribe, your grandma. It’s inseparable from those from the get-go. 
+                                    Laughter is brightest in the place where food is good. I realized very
+                                    early the power of food to evoke memory, to bring people together, 
+                                    to transport you to other places, and I wanted to be a part of that.
+                                    Food is not rational. Food is culture, habit, craving, and identity.</p>
+                                    <button type ="button" class ="btn" onclick="myFunction1() ">Know More</button>    
+                            </div>
+                            </article>
+                            <article class="service">
+                                <div class="service-icon">
+                                    <span>
+                                        <i class ="fas fa-door closed"></i>
+                                    </span>
+                                </div>
+                            <div class="service-content">
+                                <h2>Room Security</h2>
+                                    <p id="demo2">Food is everything we are. It’s an extension of nationalist feeling, 
+                                    ethnic feeling, your personal history, your province, your region, 
+                                    your tribe, your grandma. It’s inseparable from those from the get-go. 
+                                    Laughter is brightest in the place where food is good. I realized very
+                                    early the power of food to evoke memory, to bring people together, 
+                                    to transport you to other places, and I wanted to be a part of that.
+                                    Food is not rational. Food is culture, habit, craving, and identity.</p>
+                                    <button type ="button" class ="btn" onclick="myFunction2() ">Know More</button>    
+                            </div>
+                            </article>
+                        </div>
+                </section>
+
+            <div class ="book">
+                <form class ="book-form">
+                    <div class = "form-item">
+                        <label for ="checkin-date">CHECK IN DATE: </label>
+                        <input type ="date" id ="checkin-date" required>
+                    </div>
+                    <div class = "form-item">
+                        <label for ="checkout-date">CHECK OUT DATE: </label>
+                        <input type ="date" id ="checkout-date" required>
+                    </div>
+                    <div class = "form-item">
+                        <label for ="adult">ADULTS: </label>
+                        <input type ="number"  min = "1"  id ="adult" required>
+                    </div>
+                    <div class = "form-item">
+                        <label for ="children">CHILDREN: </label>
+                        <input type ="number"  min = "1"  id ="children" required>
+                    </div>
+                    <div class = "form-item">
+                        <label for ="destination">Destination: </label>
+                        <input type ="text" id ="destination" required>
+                    </div>
+                    <div class = "form-item">
+                        <input type ="submit"  class = "btn" value ="FIND A HOTEL">
+                    </div> 
+                </form>
+            </div>
+        </main>
+
+    
+    <!-- footer section -->
+    <footer>
+        <quote>Take memories, leave footprints!</quote>
+        <copyright> &copy; ITS - G5 All Rights Reserved!</copyright>
+        <social-media>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram_logo.png" alt="insta_url"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook_logo.png" alt="facebook_url "></a>
+            <a href="https://twitter.com/ " target="_blank"><img src="images/twitter_logo.png" alt="twitter_url"></a>
+        </social-media>
+    </footer>
+</body>
+
+</html>
