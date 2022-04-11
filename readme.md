@@ -9,7 +9,7 @@
 - [x] 
 - Search Flight, flight list and flight details - Mira
 - Food, Blog and Restaurants pages - Simul
-
+- Hotel search, hotel booking and manage booking - Anna
 ## Learning curve and challenges
 - javascript
 
