@@ -241,14 +241,23 @@ header identity h1 {
     font-size: 17px;
     color: #049edb;
 }
-
-header sign-in h2 {
+header sign-in {
     float: right;
+    display: flex;
+    width: 10em;
+    justify-content: space-between;
     background-color: #049edb;
     border-radius: 25px;
-    padding: 10px;
+    padding: 0 10px;
     color: white;
     font-size: 1.1em;
+}
+
+header sign-in img {
+    float: right;
+    width: 2em;
+    height: 2em;
+    align-self: center;
 }
 
 header sign-in h2:hover {
