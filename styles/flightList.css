@@ -65,6 +65,10 @@ main{
     font-size: 16px;
     cursor: pointer;
 }
+.noFlight{
+    color: #049edb;
+    font-size: 24px;
+}
 .goBack{
     color: blue;
     cursor: pointer;

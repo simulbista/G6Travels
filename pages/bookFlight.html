@@ -44,13 +44,13 @@
                     <form name="searchFlightForm" action="">
                         <input type="radio" name="tripType" value="roundtrip" checked>Round Trip<br>
                         <input type="radio" name="tripType" value="oneway">One Way<br>
-                        <p>From: <input type="text" id="from" list="fromLinks"></p>
+                        <p>From: <input type="text" id="from" list="fromLinks" name="fromLinks"></p>
                         <datalist id="fromLinks">
                             <option value="Kochi" label="COK">
                             <option value="Bengaluru" label="BLR">
                             <option value="Mumbai" label="MUM">
                         </datalist>
-                        <p>To: <input type="text" id="to" list="toLinks"></p>
+                        <p>To: <input type="text" id="to" list="toLinks" name="toLinks"></p>
                         <datalist id="toLinks">
                             <option value="Hyderabad" label="HYD">
                             <option value="Chennai" label="CHE">
@@ -86,6 +86,7 @@
                 </social-media>
             </footer>
         </div>  
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
         <script src="../javascript/bookFlight.js"></script> 
     </body>
 </html>

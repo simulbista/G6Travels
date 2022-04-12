@@ -40,12 +40,13 @@
                     
                 </div>
                 <div class="tab">
-                    <button class="tablinks">Flight Details</button>
-                    <button class="tablinks">Fare Summary</button>
-                    <button class="tablinks">Cancellation</button>
-                    <button class="tablinks">Date Change</button>
+                    <button class="tablinks active" onclick="handleFlightDetailTabClick(1)">Flight Details</button>
+                    <button class="tablinks" onclick="handleFlightDetailTabClick(2)">Fare Summary</button>
+                    <button class="tablinks" onclick="handleFlightDetailTabClick(3)">Cancellation</button>
+                    <button class="tablinks" onclick="handleFlightDetailTabClick(4)">Date Change</button>
                 </div>
                 <div class="flightCard" class="tabcontent">
+                    <div id="flightDetails">
                         <div class="flightDeparture">
                             <div class="flightDetailHeading">08:00</div>
                             <div>Tue 15 Mar 22</div>
@@ -73,7 +74,9 @@
                             <div >CABIN:</div>
                             <div>7kgs (1 piece only)</div>
                         </div>
-                        <!-- <table class="fareBreakupTable">
+                    </div>
+                    <div id="fareSummary">
+                        <table class="fareBreakupTable">
                             <thead>
                                 <tr>
                                     <th rowspan="2">Fare Breakup</th>
@@ -96,8 +99,10 @@
                                     <td>$350</td>
                                 </tr>
                             </tfoot>
-                        </table> -->
-                        <!-- <table class="otherDetailsTable">
+                        </table>
+                    </div>
+                    <div id="flightCancellation">
+                        <table class="otherDetailsTable">
                             <thead>
                                 <tr>
                                     <th rowspan="2">Time frame (From Scheduled flight departure)</th>
@@ -118,9 +123,11 @@
                                     <td>ADULT : $ 3,000 + $ 300</td>
                                 </tr>
                             </tbody>
-                        </table> -->
-                        <!-- <span>*From the Date of Departure</span> -->
-                        <!-- <table class="otherDetailsTable">
+                        </table>
+                        <span>*From the Date of Departure</span>
+                    </div>
+                    <diV id="dateChange">
+                        <table class="otherDetailsTable hideTab">
                             <thead>
                                 <tr>
                                     <th rowspan="2">Time frame (From Scheduled flight departure)</th>
@@ -141,8 +148,9 @@
                                     <td>ADULT: $ 2,500 + $ 300 + Fare difference</td>
                                 </tr>
                             </tbody>
-                        </table> -->
-                        <!-- <span>*From the Date of Departure</span> -->
+                        </table>
+                        <span>*From the Date of Departure</span>
+                    </diV>    
                 </div>  
                 <div>
                     <input type="submit" id="bookTicket" value="Book Ticket">
@@ -159,6 +167,7 @@
                 </social-media>
             </footer>
         </div>  
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
         <script src="../javascript/flightDetail.js"></script> 
     </body>
 </html>

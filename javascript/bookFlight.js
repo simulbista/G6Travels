@@ -5,6 +5,16 @@ const depDate = document.getElementById("depDate");
 const returnDate = document.getElementById("returnDate");
 const passengerCount = document.getElementById("passengerCount");
 
+//airport code key value pairs to refer while setting source and destination in localstorage
+const airportCodes = {
+    "Kochi": 'COK',
+    "Bengaluru": "BLR",
+    "Mumbai": "MUM",
+    "Hyderabad": "HYD",
+    "Chennai": "CHE",
+    "Delhi": "DEL"
+};
+
 //handle go back
 const goBackToLanding = () => {
     window.location.replace("http://127.0.0.1:5500/pages/travel.html");
@@ -16,8 +26,17 @@ const searchFlights = (e) => {
     e.preventDefault();
     clearErrorBorders();
     const isFormValid = validateForm();
-    if(isFormValid)
+    if(isFormValid){
+        //get user's selection and set in localstorage to filter flight list accordingly
+        source = $('[name="fromLinks"]').val();
+        destination = $('[name="toLinks"]').val();
+        fare = $('#book').val();
+        localStorage.setItem("sourceLoc",airportCodes[source]);
+        localStorage.setItem("destinationLoc",airportCodes[destination]);
+        localStorage.setItem("fare",fare);
         window.location.replace("http://127.0.0.1:5500/pages/flightList.html");
+    }
+       
 };
 
 //clear error borders if any  before validating data

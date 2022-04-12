@@ -53,33 +53,41 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
         <script type="text/javascript">
             $(document).ready(function(){
-                for(i=0;i<flightData.length;i++){
-                    $("#flightListUl").append(
-                        `<li>
-                            <a>
-                                <div class="flightCard">
-                                    <span class="flightAirline">${flightData[i].name}</span>  
-                                    <div class="flightDeparture">
-                                        <div>${flightData[i].arrival}</div>
-                                        <div>${flightData[i].source}</div>
+                //Get the user search filter from localstorage and filter flightData using filter(source,destination,fare) and display accordingly
+                const source = localStorage.getItem("sourceLoc");
+                const destination = localStorage.getItem("destinationLoc");
+                const maxTicketFare = localStorage.getItem("fare");
+                const filteredFlightData = flightData.filter( flight => flight.source == source && flight.destination == destination && flight.rate <= JSON.parse(maxTicketFare));
+                if(filteredFlightData.length)
+                    for(i=0;i<filteredFlightData.length;i++){
+                        $("#flightListUl").append(
+                            `<li>
+                                <a>
+                                    <div class="flightCard">
+                                        <span class="flightAirline">${flightData[i].name}</span>  
+                                        <div class="flightDeparture">
+                                            <div>${flightData[i].arrival}</div>
+                                            <div>${flightData[i].source}</div>
+                                        </div>
+                                        <div class="flightDuration">
+                                            <div>${flightData[i].duration}</div>
+                                            <div><hr></div>
+                                        </div>
+                                        <div class="flightArrival">
+                                            <div>${flightData[i].departure}</div>
+                                            <div>${flightData[i].destination}</div>
+                                        </div>
+                                        <div class="ticketPrice">&#x24;${flightData[i].rate}</div>
+                                        <div>
+                                            <input type="submit" id="bookFlight" value="View Flight" onclick=viewFlight(flightData[i])>
+                                        </div> 
                                     </div>
-                                    <div class="flightDuration">
-                                        <div>${flightData[i].duration}</div>
-                                        <div><hr></div>
-                                    </div>
-                                    <div class="flightArrival">
-                                        <div>${flightData[i].departure}</div>
-                                        <div>${flightData[i].destination}</div>
-                                    </div>
-                                    <div class="ticketPrice">&#x24;${flightData[i].rate}</div>
-                                    <div>
-                                        <input type="submit" id="bookFlight" value="View Flight" onclick="viewFlight()">
-                                    </div> 
-                                </div>
-                            </a>
-                        </li>`
-                    );
-                }
+                                </a>
+                            </li>`
+                        );
+                    }
+                else
+                    $("#flightListUl").append('<span class="noFlight">No Flights Found</span>');
             });
         </script>
          <script src="../javascript/flightList.js"></script> 
