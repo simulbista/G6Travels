@@ -3,6 +3,16 @@ const goBackToFlightList = () => {
     window.location.replace("http://127.0.0.1:5500/pages/flightList.html");
 };
 
+//airport code key value pairs to refer while setting fields in from and to
+const airportCodes = {
+    'COK': "Kochi",
+    "BLR": "Bengaluru",
+    "MUM": "Mumbai",
+    "HYD": "Hyderabad",
+    "CHE": "Chennai",
+    "DEL": "Delhi"
+};
+
 //Function to handle tab click and show corresponding tab's content
 const handleFlightDetailTabClick = (tabIndex) => {
     hideAllTabs();

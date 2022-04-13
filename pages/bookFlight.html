@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +7,15 @@
     <title>G6 Travels</title>
     <link rel="stylesheet" href="../styles/header-footer.css">
     <link rel="stylesheet" href="../styles/bookFlight.css">
-    <link rel="shortcut icon" href="../images/sample-logo.png">
+    <link rel="shortcut icon" href="../images/logos/Logo-tb.png">
     <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="container">
         <!-- header section -->
         <header>
             <identity>
-                <img src="../images/sample-logo.png" alt="G6 Travels Logo">
+                <img src="../images/logos/Logo-tb.png" alt="G6 Travels Logo">
                 <h1>G6 Travels</h1>
             </identity>
             <sign-in>
@@ -63,15 +61,14 @@
                     <p>No of passengers: <input type="number" max=10 min=1 id="passengerCount"></p>
                     <p>Class:
                         <select name="class">
-                                <option value="business">Business Class</option>
-                                <option value="economy">Economy</option>
-                            </select>
+                            <option value="business">Business Class</option>
+                            <option value="economy">Economy</option>
+                        </select>
                     </p>
                     <p>
                         <label for="book">Fare range (0 - 5000)</label>
                         <input type="range" name="book" id="book" min="1" max="5000" step="1"><br><br>
                     </p>
-
                     <p><input type="submit" id="submit" value="Search" onclick="searchFlights(event)"></p>
                 </form>
             </div>
@@ -90,5 +87,4 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../javascript/bookFlight.js"></script>
 </body>
-
 </html>

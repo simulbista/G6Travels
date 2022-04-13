@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +7,15 @@
     <title>G6 Travels</title>
     <link rel="stylesheet" href="../styles/header-footer.css">
     <link rel="stylesheet" href="../styles/flightDetail.css">
-    <link rel="shortcut icon" href="../images/sample-logo.png">
+    <link rel="shortcut icon" href="../images/logos/Logo-tb.png">
     <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="container">
         <!-- header section -->
         <header>
             <identity>
-                <img src="../images/sample-logo.png" alt="G6 Travels Logo">
+                <img src="../images/logos/Logo-tb.png" alt="G6 Travels Logo">
                 <h1>G6 Travels</h1>
             </identity>
             <sign-in>
@@ -34,14 +32,11 @@
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </menu>
-        <a class="goBack" onclick="goBackToFlightList()">Go back</a>
+        <a class="goBack" onclick="event.stopPropagation();goBackToFlightList()">Go back</a>
         <!-- main -->
         <main>
             <div>
-                <h3 class="flightAirline">Air Aisa I5 | 740
-                    <p>New Delhi to Bengaluru, 15 Mar</p>
-                </h3>
-
+                <h3 class="flightAirline"></h3>
             </div>
             <div class="tab">
                 <button class="tablinks active" onclick="handleFlightDetailTabClick(1)">Flight Details</button>
@@ -51,23 +46,9 @@
             </div>
             <div class="flightCard" class="tabcontent">
                 <div id="flightDetails">
-                    <div class="flightDeparture">
-                        <div class="flightDetailHeading">08:00</div>
-                        <div>Tue 15 Mar 22</div>
-                        <div>Terminal 3</div>
-                        <div>New Delhi, India</div>
-                    </div>
-                    <div class="flightDuration">
-                        <div>2h 40m</div>
-                        <div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="flightArrival">
-                        <div class="flightDetailHeading">10:40</div>
-                        <div>Tue 15 Mar 22</div>
-                        <div>Bengaluru,India</div>
-                    </div>
+                    <div class="flightDeparture"></div>
+                    <div class="flightDuration"></div>
+                    <div class="flightArrival"></div>
                     <div class="flightBaggage">
                         <div class="flightDetailHeading">BAGGAGE:</div>
                         <div>ADULT</div>
@@ -89,22 +70,6 @@
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Base Fare</td>
-                                <td>$300</td>
-                            </tr>
-                            <tr>
-                                <td>Surcharges</td>
-                                <td>$50</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th id="total">TOTAL</th>
-                                <td>$350</td>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
                 <div id="flightCancellation">
@@ -174,7 +139,43 @@
         </footer>
     </div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //Get the user selected flightData from localstorage ans append to html accordingly
+            const flightData = localStorage.getItem("flightData") && JSON.parse(localStorage.getItem("flightData"));
+            const fromDate = localStorage.getItem("fromDate");
+            const toDate = localStorage.getItem("toDate");
+            const fromDateDay = localStorage.getItem("fromDateDay");
+            const toDateDay = localStorage.getItem("toDateDay");
+            $(".flightAirline").append(`${flightData.name} ${flightData.flightNum}<p>${airportCodes[flightData.source]} to ${airportCodes[flightData.destination]}, ${fromDate}</p>`);
+            $(".flightDeparture").append(`<div class="flightDetailHeading">${flightData.arrival}</div>
+                                                <div>${fromDateDay}, ${fromDate}</div>
+                                                <div>Terminal ${flightData.terminal}</div>
+                                                <div>${airportCodes[flightData.source]}, India</div>
+                                            </div>`);
+            $(".flightDuration").append(`<div>${flightData.duration}</div><div><hr></div>`)
+            $(".flightArrival").append(`<div class="flightDetailHeading">${flightData.departure}</div>
+                                                <div>${toDateDay}, ${toDate}</div>
+                                                <div>${airportCodes[flightData.destination]}, India</div>
+                                            </div>`);                        
+            $('.fareBreakupTable thead').after(`<tbody>
+                                                    <tr>
+                                                        <td>Base Fare</td>
+                                                        <td>$${flightData.rate}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Surcharges</td>
+                                                        <td>$50</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th id="total">TOTAL</th>
+                                                        <td>${50+flightData.rate}</td>
+                                                    </tr>
+                                                </tfoot>`);                       
+        });
+    </script>
     <script src="../javascript/flightDetail.js"></script>
 </body>
-
 </html>

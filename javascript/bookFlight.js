@@ -17,7 +17,7 @@ const airportCodes = {
 
 //handle go back
 const goBackToLanding = () => {
-    window.location.replace("http://127.0.0.1:5500/pages/travel.html");
+    window.location.replace("http://127.0.0.1:5500/pages/bookTravel.html");
 };
 
 //validate the data before moving to next page
@@ -31,9 +31,33 @@ const searchFlights = (e) => {
         source = $('[name="fromLinks"]').val();
         destination = $('[name="toLinks"]').val();
         fare = $('#book').val();
+
         localStorage.setItem("sourceLoc",airportCodes[source]);
         localStorage.setItem("destinationLoc",airportCodes[destination]);
         localStorage.setItem("fare",fare);
+
+        //get fromdate and todate and convert to required date format
+        const fromDate = new Date($('#depDate').val());
+        day = fromDate.getDate();
+        dayOfWeek = fromDate.getDay();
+        month = fromDate.getMonth() + 1;
+        year = fromDate.getFullYear();
+
+        const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        // localStorage.setItem("fromDate",[day, month, year].join('/'));
+        localStorage.setItem("fromDateDay", weekdays[dayOfWeek]);
+        localStorage.setItem("fromDate", [day, month, year].join('/'));
+
+        //get fromdate and todate and convert to required date format
+        let toDate = new Date($('#returnDate').val());
+        day = toDate.getDate();
+        dayOfWeek = toDate.getDay();
+        month = toDate.getMonth() + 1;
+        year = toDate.getFullYear();
+
+        localStorage.setItem("toDateDay", weekdays[dayOfWeek]);
+        localStorage.setItem("toDate", [day, month, year].join('/'));
+
         window.location.replace("http://127.0.0.1:5500/pages/flightList.html");
     }
        

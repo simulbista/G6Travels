@@ -195,13 +195,28 @@ td img {
 
 .mycard {
     padding: 10px 20px;
-    background: #00B9DF;
-    height: 100%;
+    background: #009EDB;
+    height: 93.4%;
+    opacity: 0.8;
 }
 
 .mycard a {
-    font-size: 20px;
-    line-height: 40px
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.mycard a:hover{
+    color: #000 !important;
+    background-color: #B3D5E9 !important
 }
 
 .whitecard {
