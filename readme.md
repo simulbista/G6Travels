@@ -11,7 +11,13 @@
 - Food, Blog and Restaurants pages - Simul
 - Hotel search, hotel booking and manage booking - Anna
 ## Learning curve and challenges
+- responsive web design
 - javascript
+- flexbox and grid css
+- jquery
+- local storage
+
+## Features
 
 ## Resources
 
