@@ -17,7 +17,7 @@ const airportCodes = {
 
 //handle go back
 const goBackToLanding = () => {
-    window.location.replace("http://127.0.0.1:5500/pages/travel.html");
+    window.location.replace("http://127.0.0.1:5500/pages/bookTravel.html");
 };
 
 //validate the data before moving to next page
