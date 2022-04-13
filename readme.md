@@ -18,7 +18,18 @@
 - local storage
 
 ## Features
+1)Anna Salas
+2)Devinder Singh Sirohi
+3)Mira Philip
+4)Nilangkumar Joshi
+5)Niral Chirag Patel
+6)Simul Bista
+    a)Food
+    - description of food page
+    -explain what javascript you used
 
+    b)Restaurants
+    c)Blog
 ## Resources
 
 - favicons & images: 
