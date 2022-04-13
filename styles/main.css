@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
     min-height: 100vh;
 }
@@ -214,7 +214,7 @@ td img {
     font-size: 1.1em;
 }
 
-.mycard a:hover{
+.mycard a:hover {
     color: #000 !important;
     background-color: #B3D5E9 !important
 }
