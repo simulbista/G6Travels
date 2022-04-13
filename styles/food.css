@@ -14,8 +14,10 @@ body {
 }
 
 title-image h1 {
-    width: fit-content;
-    margin: 10px auto;
+    /* width: fit-content;
+    margin: 10px auto; */
+    text-align: center;
+    box-sizing: content-box;
     color: #049edb;
     font-family: cursive;
     font-weight: 100;
