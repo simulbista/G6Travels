@@ -3,7 +3,6 @@ console.log("Javascript timer countdown initiated");
 const startMin = 5;
 let time = startMin * 60;
 const countDown = document.getElementById('count-down');
-let counter = 0;
 
 // calling updateCountdown every sec
 // setInterval(updateCountdown, 1000);
@@ -17,9 +16,8 @@ let i = setInterval(function updateCountdown() {
     countDown.innerHTML = `${min}:${sec}`;
     time--;
 
-    // counter to stop the function execution after the timer reaches 0 mins and 0 seconds
-    counter++;
-    if (counter == 301) {
+    //to stop the function execution after the timer reaches 0 mins and 0 seconds
+    if (min == 0 && sec == 0) {
         clearInterval(i);
     }
 }, 1000);

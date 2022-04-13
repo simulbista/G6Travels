@@ -120,7 +120,7 @@ td img {
 @media screen and (max-width:700px) {
     title-image h1 {
         font-size: 20px;
-        height: 25px;
+        /* height: 25px; */
     }
     filter {
         flex-direction: row;
