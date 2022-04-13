@@ -17,7 +17,9 @@ const flightData = [
         arrival: "04:15",
         departure: "07:10",
         duration: "2h 55m",
-        rate: 100
+        rate: 100,
+        terminal: 3,
+        flightNum: "I5 | 740"
     },
     {
         id: 2,
@@ -27,7 +29,9 @@ const flightData = [
         arrival: "10:30",
         departure: "11:05",
         duration: "35m",
-        rate: 200
+        rate: 200,
+        terminal: 4,
+        flightNum: "I4 | 740"
     },
     {
         id: 3,
@@ -37,7 +41,9 @@ const flightData = [
         arrival: "22:40",
         departure: "23:25",
         duration: "45m",
-        rate: 300
+        rate: 300,
+        terminal: 5,
+        flightNum: "V2 | 330"
     },
     {
         id: 3,
@@ -47,7 +53,9 @@ const flightData = [
         arrival: "12:25",
         departure: "1:05",
         duration: "40m",
-        rate: 400
+        rate: 400,
+        terminal: 3,
+        flightNum: "V1 | 231"
     },
     {
         id: 4,
@@ -57,7 +65,9 @@ const flightData = [
         arrival: "02:35",
         departure: "03:35",
         duration: "1h",
-        rate: 500
+        rate: 500,
+        terminal: 6,
+        flightNum: "J6 | 989"
     },
     {
         id: 5,
@@ -67,7 +77,9 @@ const flightData = [
         arrival: "18:20",
         departure: "19:20",
         duration: "1h",
-        rate: 600
+        rate: 600,
+        terminal: 2,
+        flightNum: "S8 | 223"
     },
     {
         id: 6,
@@ -77,6 +89,8 @@ const flightData = [
         arrival: "11:55",
         departure: "14:55",
         duration: "3h",
-        rate: 700
+        rate: 700,
+        terminal: 2,
+        flightNum: "G6 | 707"
     }
 ];
