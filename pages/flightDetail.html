@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="shortcut icon" href="../images/logos/Logo-tb.png">
     <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <!-- header section -->
@@ -19,7 +21,9 @@
                 <h1>G6 Travels</h1>
             </identity>
             <sign-in>
-                <h2>My Profile</h2>
+                <h2>
+                    <a href="myProfile.html">My Profile</a>
+                </h2>
                 <img src="../images/my-profile.png" alt="profile_logo">
             </sign-in>
         </header>
@@ -157,7 +161,7 @@
             $(".flightArrival").append(`<div class="flightDetailHeading">${flightData.departure}</div>
                                                 <div>${toDateDay}, ${toDate}</div>
                                                 <div>${airportCodes[flightData.destination]}, India</div>
-                                            </div>`);                        
+                                            </div>`);
             $('.fareBreakupTable thead').after(`<tbody>
                                                     <tr>
                                                         <td>Base Fare</td>
@@ -173,9 +177,10 @@
                                                         <th id="total">TOTAL</th>
                                                         <td>${50+flightData.rate}</td>
                                                     </tr>
-                                                </tfoot>`);                       
+                                                </tfoot>`);
         });
     </script>
     <script src="../javascript/flightDetail.js"></script>
 </body>
+
 </html>
