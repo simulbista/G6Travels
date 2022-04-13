@@ -15,13 +15,13 @@ body {
 .hero{
     width:100%;
     height:100vh;
-    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),url("images/banner.jpg") center/cover no-repeat;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),url("../images/banner.jpg") center/cover no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     text-align: center;
     color: #fff;
-    padding: 25px;
+    padding: 5px;
     flex-direction: column;
     align-content: center;
 }
@@ -30,14 +30,14 @@ body {
     color:white;
     line-height: 2;
     text-shadow: 1px 1px 1rem rgba(0,0,0,5);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 
 }
 
 .title{
-    font-size: 3.2rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-align: center;
 }
 
@@ -151,7 +151,7 @@ body {
     color: black;
 }
 .book-form{
-    background-image: url("images/banner-img.jpg");
+    background-image: url("../images/banner-img.jpg");
     display: grid;
     justify-content: center;
     color: white;
@@ -163,7 +163,8 @@ body {
     flex-direction: row;
     justify-content: left;
 }
-.book-form input[type = "submit"]{
+.book-form button{
+    display: flex;
     margin: 18px 0 0 0;
     background: var(--dark);
     color:white;
@@ -219,125 +220,7 @@ body {
 
 
 
-/* header styling start */
-
-header {
-    background-image: linear-gradient(#84bcdc, #fff);
-    height: 80px;
-    padding: 2px 50px 0 50px;
-}
-
-header identity {
-    float: left;
-}
-
-header identity img {
-    height: 70px;
-}
-
-header identity h1 {
-    float: right;
-    padding-top: 20px;
-    font-size: 17px;
-    color: #049edb;
-}
-header sign-in {
-    float: right;
-    display: flex;
-    width: 10em;
-    justify-content: space-between;
-    background-color: #049edb;
-    border-radius: 25px;
-    padding: 0 10px;
-    color: white;
-    font-size: 1.1em;
-}
-
-header sign-in img {
-    float: right;
-    width: 2em;
-    height: 2em;
-    align-self: center;
-}
-
-header sign-in h2:hover {
-    color: #000;
-}
-
-menu {
-    display: flex;
-    justify-content: center;
-    background-color: #049edb;
-    margin: 0;
-    padding: 0;
-    height: 50px;
-}
-
-menu ul {
-    list-style-type: none;
-    margin: 0px;
-}
-
-menu ul li {
-    width: 250px;
-    padding-top: 1em;
-    float: left;
-    text-align: center;
-}
-
-menu ul li a {
-    text-decoration: none;
-    display: block;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 1.2em;
-}
-
-menu ul li a:hover {
-    color: black;
-}
-
-menu ul li a:focus {
-    color: black;
-}
 
 
 
-/* header styling end */
-
-
-/* footer styling start */
-
-footer {
-    text-align: center;
-    height: 30px;
-    color: #000;
-    font-weight: 800;
-    background-color: #049edb;
-    padding: 5px 50px 0px 50px;
-}
-
-footer quote {
-    float: left;
-}
-
-footer copyright {
-    float: left;
-    margin-left: 350px;
-}
-
-footer social-media a img {
-    float: right;
-    width: 20px;
-    height: auto;
-    padding-left: 10px;
-}
-
-footer social-media a img:hover {
-    width: 25px;
-    transition: ease-in;
-}
-
-
-/* footer styling end */
 

@@ -5,135 +5,6 @@ body {
     margin: 0px;
 }
 
-
-/* header styling start */
-
-header {
-    background-image: linear-gradient(#84bcdc, #fff);
-    height: 80px;
-    padding: 2px 50px 0 50px;
-}
-
-header identity {
-    float: left;
-}
-
-header identity img {
-    height: 70px;
-}
-
-header identity h1 {
-    float: right;
-    padding-top: 20px;
-    font-size: 17px;
-    color: #049edb;
-}
-
-header sign-in {
-    float: right;
-    display: flex;
-    width: 10em;
-    justify-content: space-between;
-    background-color: #049edb;
-    border-radius: 25px;
-    padding: 0 10px;
-    color: white;
-    font-size: 1.1em;
-}
-
-header sign-in img {
-    float: right;
-    width: 2em;
-    height: 2em;
-    align-self: center;
-}
-
-header sign-in h2:hover {
-    color: #000;
-}
-
-menu {
-    display: flex;
-    justify-content: center;
-    background-color: #049edb;
-    margin: 0;
-    padding: 0;
-    height: 50px;
-}
-
-menu ul {
-    list-style-type: none;
-    margin: 0px;
-}
-
-menu ul li {
-    width: 250px;
-    padding-top: 1em;
-    float: left;
-    text-align: center;
-}
-
-menu ul li a {
-    text-decoration: none;
-    display: block;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 1.2em;
-}
-
-menu ul li a:hover {
-    color: black;
-}
-
-menu ul li a:focus {
-    color: black;
-}
-
-
-/* header styling end */
-
-
-/* footer styling start */
-
-footer {
-    text-align: center;
-    height: 30px;
-    color: #000;
-    font-weight: 800;
-    background-color: #049edb;
-    padding: 5px 50px 0px 50px;
-}
-
-footer quote {
-    float: left;
-}
-
-footer copyright {
-    float: left;
-    margin-left: 350px;
-}
-
-footer social-media a img {
-    float: right;
-    width: 20px;
-    height: auto;
-    padding-left: 10px;
-}
-
-footer social-media a img:hover {
-    width: 25px;
-    transition: ease-in;
-}
-
-
-/* footer styling end */
-
-body {
-    padding: 0px;
-    margin: 0px;
-}
-
-
 /* main*/
 
 .container {
@@ -146,7 +17,7 @@ body {
 .hero {
     width: 100%;
     height: 100vh;
-    background: url("./images/hero.jpg") center no-repeat;
+    background: url("../images/hero.jpg") center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -176,7 +47,7 @@ body {
 }
 
 .btn {
-    border: solid brown 2px;
+    border: solid white 2px;
     color: white;
     font-size: 1.3rem;
     font-weight: bold;
@@ -225,6 +96,10 @@ body {
     color: maroon;
     text-align: center;
 }
+.service-content img{
+    width: 350px;
+    height: 200px;
+}
 
 .service-content button {
     margin-left: 0;
@@ -237,6 +112,12 @@ body {
     .service-container {
         display: flex;
         grid-template-columns: repeat(2 1fr);
-        grid-column-gap: 30px;
+        grid-column-gap: 20px;
+    }
+    .service-content img{
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
+        grid-template-columns: repeat(2 1fr);
+        grid-column-gap: 20px;
+
     }
 }
