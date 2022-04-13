@@ -31,7 +31,7 @@
         font-size: 1.1em;
     }
     
-    header sign-in h2:hover {
+    header sign-in h2 :hover {
         color: #000;
     }
     
