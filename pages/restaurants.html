@@ -51,26 +51,40 @@
         <!-- main -->
         <main>
             <filter>
-                <ul>
-                    <li>Filter</li>
-                    <li>Search</li>
-                </ul>
-                <ul>
-                    <li>Location</li>
-                    <li><a href="#">North America</a></li>
-                    <li><a href="#">South America</a></li>
-                    <li><a href="#">Brazil</a></li>
-                </ul>
-                <ul>
-                    <li>Category</li>
-                    <li><a href="#">Fine Dining</a></li>
-                    <li><a href="#">Coffee</a></li>
-                    <li><a href="#">Bakery</a></li>
-                    <li><a href="#">Pizza</a></li>
-                </ul>
-                <ul>
-                    <li><button>Clear Filter!</button></li>
-                </ul>
+                <fieldset id="fieldset1">
+                    <legend>Applied Filter</legend>
+                    <div id="location">
+                        <h3>Location</h3>
+                        <div id="appLocation">NA</div>
+                    </div>
+                    <div id="category">
+                        <h3>Category</h3>
+                        <div id="appCategory">NA</div>
+                    </div>
+                </fieldset>
+                <fieldset id="fieldset2">
+                    <legend>Location</legend>
+                    <select name="location" id="locationList">
+                        <option value="L1">Canada</option>
+                        <option value="L2">U.S.A</option>
+                        <option value="L3">Brazil</option>
+                        <option value="L4">Mexico</option>
+                        </select>
+                </fieldset>
+                <fieldset id="fieldset3">
+                    <legend>Category</legend>
+                    <input type="radio" id="fd" name="category" value="fd" checked="checked">
+                    <label for="fd">Fine Dining</label><br>
+                    <input type="radio" id="co" name="category" value="co">
+                    <label for="co">Coffee</label><br>
+                    <input type="radio" id="ba" name="category" value="ba">
+                    <label for="ba">Bakery</label><br>
+                    <input type="radio" id="pi" name="category" value="pi">
+                    <label for="pi">Pizza</label>
+                </fieldset>
+                <div id="submit">
+                    <input type="submit" value="Filter" onclick="displayFilter()">
+                </div>
             </filter>
             <table>
                 <tr>
