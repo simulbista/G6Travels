@@ -1,6 +1,6 @@
 //handle go back
 const goBackToFlightList = () => {
-    window.location.replace("http://127.0.0.1:5500/pages/flightList.html");
+    window.location.replace("/pages/flightList.html");
 };
 
 //airport code key value pairs to refer while setting fields in from and to

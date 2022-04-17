@@ -221,3 +221,11 @@ footer social-media a img:hover {
         text-align: center;
     }
 }
+
+@media(min-width: 1440px)  and (max-width: 1920px){
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%; 
+    }
+}

@@ -92,6 +92,9 @@ nav{
         background: #049edb url('../images/mobile_bus.ico') no-repeat;
         background-position: 30% center;
     }
+    main{
+        height: 750px !important;
+    }
 }
 
 @media screen 

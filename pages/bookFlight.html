@@ -50,17 +50,17 @@
                     <input type="radio" name="tripType" value="oneway">One Way<br>
                     <p>From: <input type="text" id="from" list="fromLinks" name="fromLinks"></p>
                     <datalist id="fromLinks">
-                            <option value="Kochi" label="COK">
-                            <option value="Bengaluru" label="BLR">
-                            <option value="Mumbai" label="MUM">
-                        </datalist>
+                        <option value="Kochi" label="COK">
+                        <option value="Bengaluru" label="BLR">
+                        <option value="Mumbai" label="MUM">
+                    </datalist>
                     <p>To: <input type="text" id="to" list="toLinks" name="toLinks"></p>
                     <datalist id="toLinks">
-                            <option value="Hyderabad" label="HYD">
-                            <option value="Chennai" label="CHE">
-                            <option value="Delhi" label="DEL">
-                        </datalist>
-                    <p>Departure: <input type="date" name="depDate" id="depDate"></p>
+                        <option value="Hyderabad" label="HYD">
+                        <option value="Chennai" label="CHE">
+                        <option value="Delhi" label="DEL">
+                    </datalist>
+                    <p>Departure: <input type="date" name="depDate" id="depDate" onchange="handleToDate()"></p>
                     <p>Return: <input type="date" name="returnDate" id="returnDate"></p>
                     <p>No of passengers: <input type="number" max=10 min=1 id="passengerCount"></p>
                     <p>Class:
@@ -70,9 +70,10 @@
                         </select>
                     </p>
                     <p>
-                        <label for="book">Fare range (0 - 5000)</label>
-                        <input type="range" name="book" id="book" min="1" max="5000" step="1"><br><br>
+                        <label for="book">Fare(100 - 900)</label>
+                        <input type="range" name="book" id="book" min="100" max="900" step="1"><br><br>
                     </p>
+                    <br><br>
                     <p><input type="submit" id="submit" value="Search" onclick="searchFlights(event)"></p>
                 </form>
             </div>
@@ -89,7 +90,15 @@
         </footer>
     </div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let todayDate = new Date().toISOString().substr(0, 10);
+            $('#depDate').attr('min', todayDate);
+            $('#returnDate').attr('min', todayDate);
+        });
+    </script>
     <script src="../javascript/bookFlight.js"></script>
+    <script src="../javascript/hamburger-menu.js"></script>
 </body>
 
 </html>

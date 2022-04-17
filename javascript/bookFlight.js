@@ -17,8 +17,13 @@ const airportCodes = {
 
 //handle go back
 const goBackToLanding = () => {
-    window.location.replace("http://127.0.0.1:5500/pages/bookTravel.html");
+    window.location.replace("/pages/bookTravel.html");
 };
+
+//handle disable of dates in to date based on departure date selection
+const handleToDate = () => {
+    $('#returnDate').attr('min', $('#depDate').val());
+}
 
 //validate the data before moving to next page
 const searchFlights = (e) => {
@@ -58,7 +63,7 @@ const searchFlights = (e) => {
         localStorage.setItem("toDateDay", weekdays[dayOfWeek]);
         localStorage.setItem("toDate", [day, month, year].join('/'));
 
-        window.location.replace("http://127.0.0.1:5500/pages/flightList.html");
+        window.location.replace("/pages/flightList.html");
     }
        
 };
