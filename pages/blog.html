@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/blog.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/logos/Logo-tb.png">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <identity>
+                <img src="../images/logos/Logo-tb.png" alt="site_logo">
+                <h1>G6 Travels</h1>
+            </identity>
+            <sign-in>
+                <h2>
+                    <a href="myProfile.html">My Profile</a>
+                </h2>
+                <img src="../images/logos/my-profile.png" alt="profile_logo">
+            </sign-in>
+        </header>
+        <!-- menu bar -->
+        <menu>
+            <!-- for hamburger menu for mobile -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <!-- end of hamburger -->
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./testimonial.html">Testimonials</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </menu>
+        <title-image>
+            <h1>
+                “It feels good to be lost in the right direction”
+            </h1>
+        </title-image>
+        <!-- main -->
+        <main>
+            <blogs>
+                <blog>
+                    <!-- <h2>My trip to the mountains<img src="../images/blog/like_button_no_bg.png"></h2> -->
+                    <h2>My trip to the mountains
+                        <!-- javascript implementation -->
+                        <div id="like-button" class="unlike"></div>
+                    </h2>
+                    <content>
+                        <p>I have never in my life claimed to be an adventurer or outdoors lover – until I started hiking in the mountains. With the lovely, lush green forests and foothills, the tantalizing teal lakes hidden away like a secret prize waiting
+                            to be found, and those stunning sky-high jagged peaks, it was love at first sight. But more than that, hiking in the mountains became an immediate passion because of the way it made me feel. I was able to just be the real me
+                            and connect with the version of myself that felt the most authentic and true...</p>
+                        <img src="../images/blog/blog1_img.jpg" alt="blog1-cover-image">
+                    </content>
+                </blog>
+                <blog>
+                    <h2>Amazing Australia<img src="../images/blog/like_button_no_bg.png"></h2>
+                    <content>
+                        <p>This morning we woke with the birds! There were magpies caroling and willie wagtails calling very close by, with kookaburras and cockatoos (or maybe corellas) in the background. Fortunately the magpies flew off somewhere else after
+                            they sang for a bit and we managed to doze off for another hour. For Christmas our friend Saphal received the lonely planet book Best Day Walks Australia. We were all quite enthusiastic about the entry outlining the hike to
+                            the summit of Mount Remarkable so included a couple of nights in Melrose in our itinerary. With the day forecast to be very hot, we decided to scale back our plans a bit and this morning we ventured into Alligator Gorge rather
+                            than attempting the summit...</p>
+                        <img src="../images/blog/blog2_img.jpg" alt="blog2-cover-image">
+                    </content>
+                </blog>
+                <blog>
+                    <button>Read More!</button>
+                </blog>
+            </blogs>
+            <!-- </blogs> -->
+            <form id="form" action="" method="get">
+                <div>
+                    <h1>CREATE ACCOUNT</h1>
+                    <div class="formelements"><label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Enter your full name.">
+                    </div>
+                    <div class="formelements"><label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Enter your email.">
+                    </div>
+                    <div class="formelements"><label for="password">Password</label>
+                        <input id="password" name="password" type="password">
+                    </div>
+                    <div class="formelements"><label for="passwordagain">Re-Password</label>
+                        <input id="passwordagain" name="passwordagain" type="password">
+                    </div>
+                    <div class="formelements"><button type="submit">Submit</button></div>
+                    <div class="formelements" id="formerror"></div>
+                </div>
+            </form>
+        </main>
+        <!-- <pagination>
+            </pagination> -->
+        <!-- footer section -->
+        <footer>
+            <quote>Take memories, leave footprints!</quote>
+            <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
+            <social-media>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/logos/instagram_logo.png" alt="insta_url"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/logos/facebook_logo.png" alt="facebook_url "></a>
+                <a href="https://twitter.com/ " target="_blank"><img src="../images/logos/twitter_logo.png" alt="twitter_url"></a>
+            </social-media>
+        </footer>
+    </div>
+    <!-- js link -->
+    <script src="../javascript/blog.js"></script>
+    <script src="../javascript/hamburger-menu.js"></script>
+</body>
+
+</html>

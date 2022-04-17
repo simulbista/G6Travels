@@ -1,0 +1,214 @@
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* max-width: 1400px; */
+        /* margin: 0 auto; */
+        max-width: 100%;
+        min-height: 100vh;
+    }
+    
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-family: serif;
+    }
+    
+    title-image {
+        display: flex;
+        justify-content: center;
+        min-height: 75vh;
+        background-size: cover;
+        background-image: url("../images/blog/title_image.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    title-image h1 {
+        margin: 200px auto;
+        color: white;
+    }
+    /* main style */
+    
+    main {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    /* end of main style */
+    /*content style*/
+    
+    blogs {
+        width: 70%;
+        margin: 20px;
+    }
+    
+    blog h2 {
+        padding-left: 50px;
+        font-family: cursive;
+    }
+    
+    h2 img {
+        margin-left: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    h2 img:hover {
+        background-color: #049edb;
+        border-radius: 5px;
+        padding: 2px;
+    }
+    /* form section */
+    
+    form {
+        width: 25%;
+        background-color: #00B9DF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .formelements {
+        width: 200px;
+        padding: 0.7em;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .formelements label {
+        color: #000;
+        font-weight: 700;
+    }
+    
+    #formerror {
+        font-size: .8em;
+        color: #fff;
+    }
+    
+    form h1 {
+        font-size: 1.5em;
+        font-weight: bolder;
+        color: #fff;
+    }
+    /* end of form section  */
+    /* like button */
+    
+    .unlike {
+        background: url(../images/blog/like_button_no_bg.png) no-repeat;
+        margin: 0;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+    }
+    
+    .like {
+        background: url(../images/blog/like_button_black.png) no-repeat;
+        margin: 0;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+    }
+    
+    content {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(#84bcdc, #fff);
+    }
+    
+    content p {
+        text-align: justify;
+        padding: 0 50px;
+        font: 1.1em solid black monospace;
+    }
+    
+    content img {
+        width: 500px;
+        height: 250px;
+    }
+    /* end of content style */
+    /* tablet-1300px*/
+    
+    @media screen and (max-width:1300px) {
+        filter {
+            flex-direction: row;
+            margin: 0 auto;
+            width: 1300px;
+            padding-bottom: 10px;
+        }
+        main {
+            flex-direction: column;
+        }
+        blogs {
+            width: auto;
+            margin: 20px;
+        }
+        form {
+            width: auto;
+        }
+        content {
+            display: block;
+            padding-top: 5%;
+        }
+        content img {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+            height: 60%;
+            padding-bottom: 5%;
+        }
+    }
+    /* tablet -700px*/
+    
+    @media screen and (max-width:700px) {
+        title-image h1 {
+            font-size: 20px;
+            height: 25px;
+        }
+        main {
+            flex-direction: column;
+        }
+        blogs {
+            width: auto;
+            margin: 20px;
+        }
+        form {
+            width: auto;
+        }
+        content {
+            display: block;
+            padding-top: 5%;
+        }
+        content img {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+            height: 60%;
+            padding-bottom: 5%;
+        }
+    }
+    /* mobile */
+    
+    @media screen and (max-width:415px) {
+        .container {
+            min-height: 120%;
+        }
+        title-image {
+            background-position: center left;
+        }
+        title-image h1 {
+            min-height: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+            margin: auto .7em;
+        }
+        blog h2 {
+            padding-left: 2px;
+        }
+    }

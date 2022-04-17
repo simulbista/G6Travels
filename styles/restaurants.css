@@ -1,0 +1,200 @@
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* max-width: 1400px; */
+        /* margin: 0 auto; */
+        max-width: 100%;
+        min-height: 100vh;
+    }
+    
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-family: serif;
+    }
+    
+    title-image {
+        display: flex;
+        justify-content: center;
+        min-height: 75vh;
+        background-size: cover;
+        background-image: url("../images/restaurants/title_image.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    title-image h1 {
+        margin: 200px auto;
+        color: white;
+        max-height: 60px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    /* main style */
+    
+    main {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    /* end of main style */
+    /* filter(nav) style */
+    
+    filter {
+        min-width: 200px;
+        background-color: #42503f;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1.5%;
+    }
+    
+    #location h3,
+    #category h3 {
+        color: white;
+        font-size: .9em;
+        text-decoration: underline;
+    }
+    
+    legend {
+        color: white;
+        font-size: 1em;
+        font-weight: lighter;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    #appLocation,
+    #appCategory {
+        font-size: 0.8em;
+    }
+    
+    #locationList {
+        width: 100%;
+    }
+    
+    #fieldset2 {
+        text-align: center;
+    }
+    
+    #submit {
+        text-align: center;
+    }
+    /* end of filter(nav) style */
+    
+    table {
+        margin: 0 auto;
+    }
+    
+    td {
+        border: 10px solid white;
+        padding: 0px 40px 10px 40px;
+        text-align: center;
+        vertical-align: top;
+        /* background-color: rgba(0, 0, 0, 0.1); */
+    }
+    
+    td img {
+        width: 250px;
+        height: 100px;
+    }
+    /* end of content style */
+    /* tablet-1300px*/
+    
+    @media screen and (max-width:1300px) {
+        filter {
+            flex-direction: row;
+            margin: 0 auto;
+            width: 1300px;
+            padding: 20px;
+            align-items: center;
+        }
+        td {
+            padding: 0px 60px 10px 60px;
+        }
+        td img {
+            max-width: 100%;
+            width: 160px;
+            height: 120px;
+        }
+        table {
+            margin: 0 auto;
+        }
+        #fieldset1 {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #fieldset2 {
+            width: 25%;
+        }
+        #fieldset3 {
+            width: 25%;
+        }
+        #fieldset4 {
+            width: 25%;
+        }
+        #locationList {
+            display: flex;
+            margin: 0px auto;
+            width: 170px;
+        }
+        .submit {
+            height: 10px;
+        }
+    }
+    /* tablet -700px*/
+    
+    @media screen and (max-width:700px) {
+        title-image h1 {
+            font-size: 20px;
+            /* height: 25px; */
+        }
+        filter {
+            flex-direction: column;
+        }
+        #fieldset1,
+        #fieldset2,
+        #fieldset3,
+        #fieldset4 {
+            width: 80%;
+        }
+        td {
+            display: block;
+            margin: 10px auto;
+            /* width: 100%; */
+        }
+        td img {
+            width: 150px;
+            height: auto;
+        }
+    }
+    /* mobile */
+    
+    @media screen and (max-width:415px) {
+        .container {
+            min-height: 120%;
+        }
+        title-image h1 {
+            min-height: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+            margin: auto .7em;
+        }
+        filter {
+            padding-right: 2.5em;
+        }
+        table {
+            margin: 10px auto;
+        }
+        #label {
+            color: #049edb;
+        }
+    }

@@ -1,0 +1,226 @@
+/*css for task 7*/
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* main*/
+.container{
+    width:100%;
+    max-width: 128rem;
+    padding: 0 1.5 rem;
+    margin: 0 auto;
+}
+
+.hero{
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),url("../images/banner.jpg") center/cover no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    flex-direction: column;
+    align-content: center;
+}
+
+.main-heading{
+    color:white;
+    line-height: 2;
+    text-shadow: 1px 1px 1rem rgba(0,0,0,5);
+    margin-bottom: 2rem;
+
+}
+
+.title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: 'Courgette', cursive;
+}
+.head-btn{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid #fff;
+    background: transparent;
+    padding: 13px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.head-btn:hover{
+    background: transparent;
+}
+.btn{
+    color:lightseagreen;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .5rem 3.5rem;
+    border: none;
+    border-radius: 10rem;
+}
+
+.btn-gradient{
+    background-image: var(--gradient-color);
+}
+.btn-gradient hover{
+    background-image: var(--gradient-color);
+}
+
+.dots{
+    font-size: 2.4rem;
+    margin-left: .5rem;
+    opacity: .75;
+}
+
+/*service*/
+.services{
+    margin: 40px 0;
+}
+.title h2{
+    font-size: 50px;
+    color: lightcoral;
+}
+.service{
+    display: flex;
+    margin:  10px 0;
+}
+.service-icon{
+    flex:30%;
+    align-self: flex-start;
+    font-size: 20px;
+    color: #252525;
+}
+.service-content{
+    padding-left: 10px;
+    text-indent: -0.1em;
+    text-align: center;
+    margin-left:10px;
+     margin-right:10px;
+}
+.service-content h2{
+    opacity: 1;
+    color: maroon;
+    font-size: 20px;
+}
+.service-content button{
+    margin-left: 0;
+    margin-right: 0;
+    background:var(--yellow);
+    color: lightcoral;
+}
+.btn{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid black;
+    background: transparent;
+    padding: 13px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: black;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn:hover{
+    background: transparent;
+}
+@media(min-width: 992px){
+    .service-container{
+        display: flex;
+        grid-template-columns: repeat(2 1fr);
+        grid-column-gap: 30px;
+    }
+}
+
+
+
+
+/*booking*/
+.book{
+    color: black;
+}
+.book-form{
+    background-image: url("../images/banner-img.jpg");
+    display: grid;
+    justify-content: center;
+    color: white;
+    
+    font-size: 20px;
+}
+.form-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.book-form button{
+    display: flex;
+    margin: 18px 0 0 0;
+    background: var(--dark);
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid white;
+    background: transparent;
+    padding: 13px 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.book-form label, .book-form input{
+    width: 100%;
+}
+.book-form input:not(.btn){
+    margin: 4px 0 16px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+}
+.book-form input:focus{
+    outline: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+@media(min-width: 768px) {
+    .book-form{
+        grid-template-columns: repeat(2 1fr);
+        grid-gap: 24px;
+    }
+    
+}
+@media(min-width:1170px){
+    .book-form{
+        grid-template-columns: repeat(3 1fr);
+    }
+}
+@media(min-width){
+    .book-form{
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
+    }
+    .book{
+        height: 40vh;
+        display: grid;
+    }
+}
+@media(max-width: 500px){
+    .book{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+
+
+
+

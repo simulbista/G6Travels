@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G6 Travels</title>
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/flightDetail.css">
+    <link rel="shortcut icon" href="../images/logos/Logo-tb.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header section -->
+        <header>
+            <identity>
+                <img src="../images/logos/Logo-tb.png" alt="G6 Travels Logo">
+                <h1>G6 Travels</h1>
+            </identity>
+            <sign-in>
+                <h2>
+                    <a href="myProfile.html">My Profile</a>
+                </h2>
+                <img src="../images/my-profile.png" alt="profile_logo">
+            </sign-in>
+        </header>
+        <!-- menu bar -->
+        <menu>
+            <!-- for hamburger menu for mobile -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <!-- end of hamburger -->
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./testimonial.html">Testimonials</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </menu>
+        <a class="goBack" onclick="event.stopPropagation();goBackToFlightList()">Go back</a>
+        <!-- main -->
+        <main>
+            <div>
+                <h3 class="flightAirline"></h3>
+            </div>
+            <div class="tab">
+                <button class="tablinks active" onclick="handleFlightDetailTabClick(1)">Flight Details</button>
+                <button class="tablinks" onclick="handleFlightDetailTabClick(2)">Fare Summary</button>
+                <button class="tablinks" onclick="handleFlightDetailTabClick(3)">Cancellation</button>
+                <button class="tablinks" onclick="handleFlightDetailTabClick(4)">Date Change</button>
+            </div>
+            <div class="flightCard" class="tabcontent">
+                <div id="flightDetails">
+                    <div class="flightDeparture"></div>
+                    <div class="flightDuration"></div>
+                    <div class="flightArrival"></div>
+                    <div class="flightBaggage">
+                        <div class="flightDetailHeading">BAGGAGE:</div>
+                        <div>ADULT</div>
+                    </div>
+                    <div class="flightCheckin">
+                        <div class="flightDetailHeading">CHECK IN:</div>
+                        <div>15kgs (1 piece only)</div>
+                    </div>
+                    <div class="flightCabin">
+                        <div>CABIN:</div>
+                        <div>7kgs (1 piece only)</div>
+                    </div>
+                </div>
+                <div id="fareSummary">
+                    <table class="fareBreakupTable">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Fare Breakup</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div id="flightCancellation">
+                    <table class="otherDetailsTable">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Time frame (From Scheduled flight departure)</th>
+                                <th>Airline Fee + G6T fee (Per passenger)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0 hours to 2 hours*</td>
+                                <td>ADULT : Non Refundable</td>
+                            </tr>
+                            <tr>
+                                <td>2 hours to 3 days*</td>
+                                <td>ADULT : $ 3,500 + $ 300</td>
+                            </tr>
+                            <tr>
+                                <td>3 days to 365 days*</td>
+                                <td>ADULT : $ 3,000 + $ 300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <span>*From the Date of Departure</span>
+                </div>
+                <diV id="dateChange">
+                    <table class="otherDetailsTable hideTab">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Time frame (From Scheduled flight departure)</th>
+                                <th>Airline Fee + G6T Fee + Fare difference</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0 hours to 2 hours*</td>
+                                <td>ADULT : Non Changeable</td>
+                            </tr>
+                            <tr>
+                                <td>2 hours to 3 days*</td>
+                                <td>ADULT : $ 3,000 + $ 300 + Fare difference</td>
+                            </tr>
+                            <tr>
+                                <td>3 days to 365 days*</td>
+                                <td>ADULT: $ 2,500 + $ 300 + Fare difference</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <span>*From the Date of Departure</span>
+                </diV>
+            </div>
+            <div>
+                <input type="submit" id="bookTicket" value="Book Ticket">
+            </div>
+        </main>
+        <!-- footer section -->
+        <footer>
+            <quote>Take memories, leave footprints!</quote>
+            <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
+            <social-media>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_logo.png" alt="insta_url"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_logo.png" alt="facebook_url "></a>
+                <a href="https://twitter.com/ " target="_blank"><img src="../images/twitter_logo.png" alt="twitter_url"></a>
+            </social-media>
+        </footer>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //Get the user selected flightData from localstorage ans append to html accordingly
+            const flightData = localStorage.getItem("flightData") && JSON.parse(localStorage.getItem("flightData"));
+            const fromDate = localStorage.getItem("fromDate");
+            const toDate = localStorage.getItem("toDate");
+            const fromDateDay = localStorage.getItem("fromDateDay");
+            const toDateDay = localStorage.getItem("toDateDay");
+            $(".flightAirline").append(`${flightData.name} ${flightData.flightNum}<p>${airportCodes[flightData.source]} to ${airportCodes[flightData.destination]}, ${fromDate}</p>`);
+            $(".flightDeparture").append(`<div class="flightDetailHeading">${flightData.arrival}</div>
+                                                <div>${fromDateDay}, ${fromDate}</div>
+                                                <div>Terminal ${flightData.terminal}</div>
+                                                <div>${airportCodes[flightData.source]}, India</div>
+                                            </div>`);
+            $(".flightDuration").append(`<div>${flightData.duration}</div><div><hr></div>`)
+            $(".flightArrival").append(`<div class="flightDetailHeading">${flightData.departure}</div>
+                                                <div>${toDateDay}, ${toDate}</div>
+                                                <div>${airportCodes[flightData.destination]}, India</div>
+                                            </div>`);
+            $('.fareBreakupTable thead').after(`<tbody>
+                                                    <tr>
+                                                        <td>Base Fare</td>
+                                                        <td>$${flightData.rate}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Surcharges</td>
+                                                        <td>$50</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th id="total">TOTAL</th>
+                                                        <td>${50+flightData.rate}</td>
+                                                    </tr>
+                                                </tfoot>`);
+        });
+    </script>
+    <script src="../javascript/flightDetail.js"></script>
+    <script src="../javascript/hamburger-menu.js"></script>
+</body>
+
+</html>

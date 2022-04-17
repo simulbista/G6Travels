@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 100vh;
+    background: #1d212b;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: serif;
+}
+
+title-image h1 {
+    /* width: fit-content;
+    margin: 10px auto; */
+    text-align: center;
+    box-sizing: content-box;
+    color: #049edb;
+    font-family: cursive;
+    font-weight: 100;
+}
+
+
+/* main style*/
+
+main {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    min-height: 70vh;
+    height: fit-content;
+}
+
+
+/* end of main style */
+
+foods {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+}
+
+foods * h2 {
+    color: white;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 20px;
+    margin: 100px auto;
+}
+
+food1,
+food2,
+food3,
+food4,
+food5 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-height: 400px;
+    min-width: 200px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
+    padding: 2px;
+}
+
+food1 {
+    background-image: url("../images/food/indian\ food.jpg");
+}
+
+food2 {
+    background-image: url("../images/food/continental\ food.jpg");
+}
+
+food3 {
+    background-image: url("../images/food/chinese\ food.jpg");
+}
+
+food4 {
+    background-image: url("../images/food/mexican\ food.jpg");
+}
+
+food5 {
+    background-image: url("../images/food/italian\ food.jpg");
+}
+
+
+/* countdown timer */
+
+#count-down,
+info {
+    margin: 0 auto;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* end of content style */
+
+
+/* tablet-1300px*/
+
+@media screen and (max-width:1300px) {
+    td {
+        padding: 0px 60px 10px 60px;
+    }
+    td img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+
+/* tablet -700px*/
+
+@media screen and (max-width:700px) {
+    title-image h1 {
+        font-size: 20px;
+        height: 25px;
+    }
+    filter {
+        flex-direction: row;
+        margin: 0 auto;
+        width: 700px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/* mobile */
+
+@media screen and (max-width:415px) {
+    .container {
+        min-height: 120%;
+    }
+    title-image h1 {
+        min-height: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 1em;
+        margin: auto .7em;
+    }
+    filter {
+        padding-right: 2.5em;
+    }
+    info {
+        font-size: small;
+    }
+}

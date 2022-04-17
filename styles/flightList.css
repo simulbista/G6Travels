@@ -1,0 +1,108 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: url("../images/bookflightbg.png");
+    font-family: "Sorts Mill Goudy", serif;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 42px;
+}
+.flightsList{
+    overflow: scroll;
+    height: 390px;
+}
+.flightsList ul{
+    list-style-type: none;
+}
+.flightCard{
+    height: 80px;
+    width: auto;
+    background-color: aliceblue;
+    margin: 17px;
+    padding: 15px;
+    align-self: center;
+    border-radius: 6px;
+    color: #049edb;
+    box-shadow: 0 0 7px #049edb;
+    display: flex;
+    align-items: center;
+    width: 900px;
+    justify-content: space-between;
+}
+.flightAirline,.ticketPrice{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.flightDeparture,.flightArrival{
+    font-size: 24px;
+}
+.flightDeparture > div:last-child, .flightArrival > div:last-child{
+    font-size: 14px;
+}
+.flightDuration hr{
+    height: 2px;
+    background-color: #049edb;
+    border: none;
+}
+#bookFlight{
+    width: 100px;
+    height: 40px;
+    background-color: #049edb;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.noFlight{
+    color: #049edb;
+    font-size: 24px;
+}
+.goBack{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2) {
+    main{
+        height: 530px;
+    }
+    .flightCard{
+        height: 400px;
+        width: 300px;
+        flex-direction: column;
+    }
+    .flightsList {
+        height: 529px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    main{
+        height: 750px;
+    }
+    .flightCard {
+        height: 300px;
+        width: 600px;
+    }
+    .flightsList {
+        height: 640px;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants Page</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/restaurants.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/logos/Logo-tb.png">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <identity>
+                <img src="../images/logos/Logo-tb.png" alt="site_logo">
+                <h1>G6 Travels</h1>
+            </identity>
+            <sign-in>
+                <h2>
+                    <a href="myProfile.html">My Profile</a>
+                </h2>
+                <img src="../images/logos/my-profile.png" alt="profile_logo">
+            </sign-in>
+        </header>
+        <!-- menu bar -->
+        <menu>
+            <!-- for hamburger menu for mobile -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <!-- end of hamburger -->
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./testimonial.html">Testimonials</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </menu>
+        <title-image id="ti">
+            <h1>
+                “There is no love sincerer than the love of food!”
+            </h1>
+        </title-image>
+        <!-- main -->
+        <main>
+            <filter>
+                <fieldset id="fieldset1">
+                    <legend>Applied Filter</legend>
+                    <div id="location">
+                        <h3>Location</h3>
+                        <div id="appLocation">NA</div>
+                    </div>
+                    <div id="category">
+                        <h3>Category</h3>
+                        <div id="appCategory">NA</div>
+                    </div>
+                </fieldset>
+                <fieldset id="fieldset2">
+                    <legend>Location</legend>
+                    <select name="location" id="locationList">
+                        <option value="L1">Canada</option>
+                        <option value="L2">U.S.A</option>
+                        <option value="L3">Brazil</option>
+                        <option value="L4">Mexico</option>
+                        </select>
+                </fieldset>
+                <fieldset id="fieldset3">
+                    <legend>Category</legend>
+                    <input type="radio" id="fd" name="category" value="fd" checked="checked">
+                    <label for="fd">Fine Dining</label><br>
+                    <input type="radio" id="co" name="category" value="co">
+                    <label for="co">Coffee</label><br>
+                    <input type="radio" id="ba" name="category" value="ba">
+                    <label for="ba">Bakery</label><br>
+                    <input type="radio" id="pi" name="category" value="pi">
+                    <label for="pi">Pizza</label>
+                </fieldset>
+                <div id="submit">
+                    <input type="submit" value="Filter" onclick="displayFilter()">
+                </div>
+            </filter>
+            <table>
+                <tr>
+                    <td><img src="../images/restaurants/pizza_palace.jpg" alt="restaurant-pizza-palace">
+                        <p>Pizza Palace</p>
+                        <p>221B Baker Street, Toronto, Canada</p>
+                        <button>Explore!</button>
+                    </td>
+                    <td><img src="../images/restaurants/ten_restaurant.jpg" alt="restaurant-ten-restaurant">
+                        <p>Ten Restaurant</p>
+                        <p>66 Wellington St, Toronto, Canada</p>
+                        <button>Explore!</button>
+                    </td>
+                    <td><img src="../images/restaurants/harbour.jpg" alt="restaurant-harbour">
+                        <p>Harbour 60 Toronto</p>
+                        <p>53 Scollard Street, Toronto, Canada</p>
+                        <button>Explore!</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../images/restaurants/jacobs.jpg" alt="restaurant-jacobs">
+                        <p>Jacobs & Co. Steakhouse</p>
+                        <p>196 Robert St, Toronto, Canada</p>
+                        <button>Explore!</button>
+                    </td>
+                    <td><img src="../images/restaurants/porch.jpg" alt="restaurant-porch">
+                        <p>The Porch</p>
+                        <p>1132 College St, Toronto, Canada</p>
+                        <button>Explore!</button>
+                    </td>
+                    <td><img src="../images/restaurants/alo.jpg" alt="restaurant-alo">
+                        <p>Alo</p>
+                        <p>10 Bay St. #105, Toronto, Canada</p>
+                        <button>Explore!</button>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <!-- <pagination>
+            </pagination> -->
+        <!-- footer section -->
+        <footer>
+            <quote>Take memories, leave footprints!</quote>
+            <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
+            <social-media>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/logos/instagram_logo.png" alt="insta_url"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/logos/facebook_logo.png" alt="facebook_url "></a>
+                <a href="https://twitter.com/ " target="_blank"><img src="../images/logos/twitter_logo.png" alt="twitter_url"></a>
+            </social-media>
+        </footer>
+    </div>
+    <!-- js link -->
+    <script src="../javascript/restaurants.js"></script>
+    <script src="../javascript/hamburger-menu.js"></script>
+</body>
+
+</html>

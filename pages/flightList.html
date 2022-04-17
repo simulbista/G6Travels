@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G6 Travels</title>
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/flightList.css">
+    <link rel="shortcut icon" href="../images/logos/Logo-tb.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header section -->
+        <header>
+            <identity>
+                <img src="../images/logos/Logo-tb.png" alt="G6 Travels Logo">
+                <h1>G6 Travels</h1>
+            </identity>
+            <sign-in>
+                <h2>
+                    <a href="myProfile.html">My Profile</a>
+                </h2>
+                <img src="../images/my-profile.png" alt="profile_logo">
+            </sign-in>
+        </header>
+        <!-- menu bar -->
+        <menu>
+            <!-- for hamburger menu for mobile -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <!-- end of hamburger -->
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./testimonial.html">Testimonials</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </menu>
+        <!-- main -->
+        <a class="goBack" onclick="goBackToSearchFlights()">Go back</a>
+        <main>
+            <div class="flightsList">
+                <ul id="flightListUl"></ul>
+            </div>
+        </main>
+        <!-- footer section -->
+        <footer>
+            <quote>Take memories, leave footprints!</quote>
+            <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
+            <social-media>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_logo.png" alt="insta_url"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_logo.png" alt="facebook_url "></a>
+                <a href="https://twitter.com/ " target="_blank"><img src="../images/twitter_logo.png" alt="twitter_url"></a>
+            </social-media>
+        </footer>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //Get the user search filter from localstorage and filter flightData using filter(source,destination,fare) and display accordingly
+            const source = localStorage.getItem("sourceLoc");
+            const destination = localStorage.getItem("destinationLoc");
+            const maxTicketFare = localStorage.getItem("fare");
+            const filteredFlightData = flightData.filter(flight => flight.source == source && flight.destination == destination && flight.rate <= JSON.parse(maxTicketFare));
+
+            const viewFlightClick = (e) => {
+                localStorage.removeItem(flightData);
+                e.stopPropagation();
+                if (e && e.target) {
+                    const flightIndex = parseInt(e.target.getAttribute("flightIndex"));
+                    viewFlight(flightData[flightIndex]);
+                }
+            }
+
+            if (filteredFlightData.length)
+                for (i = 0; i < filteredFlightData.length; i++) {
+                    $("#flightListUl").append(
+                        `<li>
+                            <a>
+                                <div class="flightCard">
+                                    <span class="flightAirline">${flightData[i].name}</span>  
+                                    <div class="flightDeparture">
+                                        <div>${flightData[i].arrival}</div>
+                                        <div>${flightData[i].source}</div>
+                                    </div>
+                                    <div class="flightDuration">
+                                        <div>${flightData[i].duration}</div>
+                                        <div><hr></div>
+                                    </div>
+                                    <div class="flightArrival">
+                                        <div>${flightData[i].departure}</div>
+                                        <div>${flightData[i].destination}</div>
+                                    </div>
+                                    <div class="ticketPrice">&#x24;${flightData[i].rate}</div>
+                                    <div>
+                                        <input type="submit" id="bookFlight"  class="viewFlightBtn" flightIndex = ${i} value="View Flight" onclick="viewFlightClick(e)">
+                                    </div> 
+                                </div>
+                            </a>
+                        </li>`
+                    );
+                }
+            else
+                $("#flightListUl").append('<span class="noFlight">No Flights Found</span>');
+
+            document.querySelectorAll(".viewFlightBtn").forEach(flight => flight.addEventListener("click", viewFlightClick));
+        });
+    </script>
+    <script src="../javascript/flightList.js"></script>
+    <script src="../javascript/hamburger-menu.js"></script>
+</body>
+
+</html>
