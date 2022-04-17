@@ -88,12 +88,32 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
+@media screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2) {
+    main{
+        height: 600px;
+        margin-top: 0px;
+    }
+    main div:first-child{
+        display: none;
+    }
+    .bookTicket{
+        height: 430px;
+        width: 330px;
+    }
+    form input, form select {
+        width: 150px;
+    }
+    #submit {
+        width: 270px;
+    } 
+}
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     main{
-        height: 768px !important;
+        height: 768px;
     }
     main div:first-child{
         display: none

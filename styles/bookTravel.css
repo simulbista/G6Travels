@@ -75,6 +75,9 @@ nav{
         background: #049edb url('../images/mobile_bus.ico') no-repeat;
         background-position: 8% center;
     }
+    main{
+        height: 530px;
+    }
 }
 @media only screen 
   and (min-device-width: 768px) 
@@ -93,7 +96,7 @@ nav{
         background-position: 30% center;
     }
     main{
-        height: 750px !important;
+        height: 750px;
     }
 }
 

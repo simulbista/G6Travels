@@ -77,12 +77,26 @@ main{
     padding-top: 10px;
 }
 
+@media screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2) {
+    main{
+        height: 530px;
+    }
+    .flightCard{
+        height: 400px;
+        width: 300px;
+        flex-direction: column;
+    }
+    .flightsList {
+        height: 529px;
+    }
+}
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     main{
-        height: 750px !important;
+        height: 750px;
     }
     .flightCard {
         height: 300px;
