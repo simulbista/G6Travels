@@ -222,7 +222,7 @@ footer social-media a img:hover {
     }
 }
 
-@media(min-width: 1440px)  and (max-width: 1920px){
+@media(min-width: 1440px)  and (max-width: 1441px){
     footer{
         position: fixed;
         bottom: 0;
