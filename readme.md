@@ -18,7 +18,9 @@
 
 ## Features
 1)Anna Salas
+
 2)Devinder Singh Sirohi
+
 3)Mira Philip
 
     a) Search Flights
@@ -72,17 +74,23 @@
     [x] Use of Jquery to append data into different tabs.
 
 4)Nilangkumar Joshi
+
 5)Niral Chirag Patel
+
 6)Simul Bista
+
     a)Food Page
     - It showcases different types of cuisines such as Indian, Continental and many more.
     - Javascript Usage: The 5 min countdown timer for the discount offer has been implemented using javascript.
+
     b)Restaurants Page
     - It contains the title image which changes on hover, a couple of restaurants with info such as the name and location. A filter section is also included which displays the user chosen filter values.
-    - Javascipt Usage: The filter section utilizes javascript along with the changing of the title image on hover.
+    - Javascipt Usage: The filter section utilizes javascript and local storage to store the filter values selected by the user and the changing of the title image on hover has been implemented using javascript as well.
+
     c)Blog Page
     - It includes 2 blog posts with titles, images, texts and like buttons(one using javascript and the other using css). It also includes a create account form.
-    - Javascript Usage: The "create account" form validation has been done using javascroipt. And the changing of the look of the first like button on click has been also done through the same.
+    - Javascript Usage: The "create account" form validation has been done using javascript. And the changing of the look of the first like button on click has been also done through the same.
+    
 ## Resources
 
 - favicons & images: 
