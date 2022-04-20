@@ -19,20 +19,20 @@
 ## Features
 1)Anna Salas
 
-a)Hotel Page
-	- It has different services offered in hotels.
-	- It also includes checking the availability of hotels using a form.
-	-Javascript Used: To know about the services clicking it shows an image of services. Also in the form, it will redirect to the hotel booking page. 
+   a)Hotel Page
+     - It has different services offered in hotels.
+     - It also includes checking the availability of hotels using a form.
+     - Javascript Used: To know about the services clicking it shows an image of services. Also in the form, it will redirect to the hotel booking page. 
 
 
-b)Hotel Booking Page
-	-It is with different types of hotels images and booking options.
-	-Javascript Usage: In book now, we use redirection to reach the hotel booking page.
+   b)Hotel Booking Page
+     - It is with different types of hotels images and booking options.
+     - Javascript Used: In book now, we use redirection to reach the hotel booking page.
 
 
-c)Manage Bookings Page
-	- In that create a manage booking form with modify and cancel options.
-	-Javascript Used: The manage booking form validation is created using javascript.
+   c)Manage Bookings Page
+    - In that create a manage booking form with modify and cancel options.
+    - Javascript Used: The manage booking form validation is created using javascript.
 
 
 2)Devinder Singh Sirohi
