@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawaii</title>
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/Europe.css">
+    <link rel="stylesheet" href="../styles/slider.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="shortcut icon" href="../images/Logo-tb.png">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <identity>
+                <img src="../images/Logo-tb.png" alt="site_logo">
+                <h1><strong>G6 Travels</strong></h1>
+            </identity>
+            <sign-in>
+                <h2>My Profile</h2>
+                <img src="../images/my-profile.png" alt="profile_logo">
+            </sign-in>
+        </header>
+        <!-- menu bar -->
+        <menu>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </menu>
+        <title-image>
+            <h1>Explore Hawaii</h1>
+        </title-image>
+        <!-- main -->
+        <main>
+            
+            <div class="new_row">
+             <div class="w_70">
+               <div class="plr_30">
+                      <h1 id="page_title">Hawaii  </h1>
+                <p>Hawaii's tropical climate and laid-back Pacific Island atmosphere are just part of </br>
+                            what makes the state so special. Occupying the tops of massive volcanic mountaintops </br>
+                            jutting from the sea, these islands have a diverse and beautiful landscape that varies </br>
+                            from the stark lunar surface of the Kilauea volcano to lush green forests filled with </br>
+                            exotic flowers.</br>
+
+                            Waterfalls stream down the mountain sides like tears on the dramatic Na Pali coast, while </br>
+                            ancient rivers have carved deep into the rock of Kauai to create the Waimea Canyon. The Big </br>
+                            Island is home to an active volcano, and Oahu is home to Pearl Harbor and its rich history.</br>
+                            
+                            Surrounding them all, the mighty Pacific is home to a plethora of ocean life, providing </br>
+                            endless opportunities to snorkel, scuba dive, surf, or simply go for a swim after sunbathing. </br>
+                            
+                            
+                            </p>
+                 <table class="dest_table">
+                <tr>
+                    <td><img src="../images/Hawaii/hawaii_1.jpg">
+                        <p>Waikiki Beach</p>
+                    </td> 
+                    <td><img src="../images/Hawaii/hawaii_2.jpg">
+                        <p>Na Pali Coast</p>
+                    </td> 
+                    <td><img src="../images/Hawaii/hawaii_3.jpg">
+                        <p>Haleakala National Park</p>
+                    </td>
+                   
+                </tr>
+            </table>
+            
+                <br />
+                <br />
+                <a href="Destinations.html"><h4>Go to destionation page</h4></a>
+               </div>
+            </div>
+            <div class="w_30">
+                  <h2>Best Location in Hawaii</h4>
+            <ul>
+                <li>Waikiki Beach</li>
+                <li>Na Pali Coast</li>
+                <li>Haleakala National Park</li>
+            </ul>
+               <button onclick="sliderChange('hidden')">Hide slider</button>
+                <button onclick="sliderChange('visible')">Show slider</button>
+              <div class="slidercontainer" id="slider">  
+                <div class="showSlide fade">  
+                    <a href="Brazil.html">
+                        <img src="../images/Brazil/Brazil.jpg" />  
+                        <div class="content">Brazil</div>
+                    </a>  
+                </div>  
+                <div class="showSlide fade">  
+                    <a href="Egypt.html">
+                        <img src="../images/Egypt/Egypt.jpg" />  
+                        <div class="content">Egypt</div> 
+                    </a> 
+                </div>  
+
+                <div class="showSlide fade">  
+                    <a href="Europe.html">
+                       <img src="../images/Europe/Europe.jpg" />  
+                       <div class="content">Europe</div>  
+                    </a>
+                </div> 
+                <div class="showSlide fade">  
+                    <a href="Hawaii.html">
+                       <img src="../images/Hawaii/Hawaii.jpg" />  
+                       <div class="content">Hawaii</div>  
+                    </a>
+                </div> 
+                <div class="showSlide fade">  
+                    <a href="India.html">
+                       <img src="../images/India/India.jpg" />  
+                       <div class="content">India</div>  
+                    </a>
+                </div>  
+
+               <!-- Navigation arrows -->  
+               <a class="left" onclick="nextSlide(-1)">❮</a>  
+               <a class="right" onclick="nextSlide(1)">❯</a>  
+            </div>
+          
+            </div>
+        </div>
+
+    </div>
+
+        </main>
+        <!-- <pagination>
+            </pagination> -->
+        <!-- footer section -->
+        <footer>
+            <quote>Take memories, leave footprints!</quote>
+            <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
+            <social-media>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_logo.png" alt="insta_url"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_logo.png" alt="facebook_url "></a>
+                <a href="https://twitter.com/ " target="_blank"><img src="../images/twitter_logo.png" alt="twitter_url"></a>
+            </social-media>
+        </footer>
+    </div>
+    <script type="text/javascript" src="../javascript/common.js"></script>
+</body>
+
+</html>

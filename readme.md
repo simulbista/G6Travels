@@ -90,7 +90,11 @@
     [x] Use of Jquery to append data into different tabs.
 
 4)Nilangkumar Joshi
-
+    a)Travel Destinations page
+    - It is basically a blog which shows various travel destination tabs with images where you can choose to go.
+    - there is one main page which shows 5 places to go. You can tap any of them and it will lead you to another seperate page of that destination and there you'll get to know the significans and tourist attractions of the place.
+    - Javascript Usage: You can change the colour of the title fonts as per your preference.
+    
 5)Niral Chirag Patel
  
     a)Index page 

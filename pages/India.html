@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India</title>
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/Europe.css">
+    <link rel="stylesheet" href="../styles/slider.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="shortcut icon" href="../images/Logo-tb.png">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <identity>
+                <img src="../images/Logo-tb.png" alt="site_logo">
+                <h1><strong>G6 Travels</strong></h1>
+            </identity>
+            <sign-in>
+                <h2>My Profile</h2>
+                <img src="../images/my-profile.png" alt="profile_logo">
+            </sign-in>
+        </header>
+        <!-- menu bar -->
+        <menu>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </menu>
+        <title-image>
+            <h1>Explore India</h1>
+        </title-image>
+        <!-- main -->
+        <main>
+           
+            <div class="new_row">
+             <div class="w_70">
+               <div class="plr_30">
+                    <h1 id="page_title">India  <select onchange="newTitleBg()" id="bgColor" class="width_100">
+                    <option value="white">Change Title Background color</option>
+                    <option value="red">Red</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                </select></h1>
+                        <p>India is the world’s seventh-largest country stretching from the high mountains of the Himalayas </br>
+                            to the tropical greenery of Kerala, and from the sacred Ganges to the sands of the Thar desert. </br>
+                            Its more than one billion inhabitants are divided into two thousand ethnic groups and speak over </br>
+                            200 different languages.</br>
+
+                            Conform its size and population, India has an almost endless variety of cultures, landscapes, </br>
+                            monuments and places to explore. From the ancient ruins, fascinating religious structures, exotic </br>
+                            cities and diverse landscape there is an endless collection of tourist attractions in India that </br>
+                            will never cease to awe and fascinate the visitor.</br>
+                            
+                            </p>
+                 <table class="dest_table">
+                <tr>
+                    <td><img src="../images/India/india_1.jpg">
+                        <p>Agra</p>
+                    </td> 
+                    <td><img src="../images/India/india_2.jpg">
+                        <p>The Gateway of India</p>
+                    </td> 
+                    <td><img src="../images/India/india_3.jpg">
+                        <p>Varanasi</p>
+                    </td>
+                   
+                </tr>
+            </table>
+            
+                <br />
+                <br />
+                <a href="Destinations.html"><h4>Go to destionation page</h4></a>
+               </div>
+            </div>
+            <div class="w_30">
+                  <h2>Best Location in India</h4>
+            <ul>
+                <li>Agra</li>
+                <li>The Gateway of India</li>
+                <li>Varanasi</li>
+            </ul>
+               <button onclick="sliderChange('hidden')">Hide slider</button>
+                <button onclick="sliderChange('visible')">Show slider</button>
+              <div class="slidercontainer">  
+                <div class="showSlide fade">  
+                    <a href="Brazil.html">
+                        <img src="../images/Brazil/Brazil.jpg" />  
+                        <div class="content">Brazil</div>
+                    </a>  
+                </div>  
+                <div class="showSlide fade">  
+                    <a href="Egypt.html">
+                        <img src="../images/Egypt/Egypt.jpg" />  
+                        <div class="content">Egypt</div> 
+                    </a> 
+                </div>  
+
+                <div class="showSlide fade">  
+                    <a href="Europe.html">
+                       <img src="../images/Europe/Europe.jpg" />  
+                       <div class="content">Europe</div>  
+                    </a>
+                </div> 
+                <div class="showSlide fade">  
+                    <a href="Hawaii.html">
+                       <img src="../images/Hawaii/Hawaii.jpg" />  
+                       <div class="content">Hawaii</div>  
+                    </a>
+                </div> 
+                <div class="showSlide fade">  
+                    <a href="#">
+                       <img src="../images/India/India.jpg" />  
+                       <div class="content">India</div>  
+                    </a>
+                </div>  
+
+               <!-- Navigation arrows -->  
+               <a class="left" onclick="nextSlide(-1)">❮</a>  
+               <a class="right" onclick="nextSlide(1)">❯</a>  
+            </div>  
+          
+            </div>
+        </div>
+
+    </div>
+           
+
+    
+        </main>
+        <!-- <pagination>
+            </pagination> -->
+        <!-- footer section -->
+        <footer>
+            <quote>Take memories, leave footprints!</quote>
+            <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
+            <social-media>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_logo.png" alt="insta_url"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_logo.png" alt="facebook_url "></a>
+                <a href="https://twitter.com/ " target="_blank"><img src="../images/twitter_logo.png" alt="twitter_url"></a>
+            </social-media>
+        </footer>
+    </div>
+    <script type="text/javascript" src="../javascript/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+     <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/Destinations.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/slider.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="shortcut icon" href="../images/Logo-tb.png">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <identity>
+                <img src="../images/Logo-tb.png" alt="site_logo">
+                <h1><strong>G6 Travels</strong></h1>
+            </identity>
+            <sign-in>
+                <h2>My Profile</h2>
+                <img src="../images/my-profile.png" alt="profile_logo">
+            </sign-in>
+        </header>
+        <menu>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </menu>
+          <div class="new_row">
+            <div class="">
+
+              <div class="slidercontainer" id="destinations">  
+                <div class="showSlide fade">  
+                    <a href="Brazil.html">
+                        <img src="../images/Brazil/Brazil.jpg" />  
+                        <div class="content">“Travel is the only thing you buy that makes you richer!” - Brazil</div>
+                    </a>  
+                </div>  
+                <div class="showSlide fade">  
+                    <a href="Egypt.html">
+                        <img src="../images/Egypt/Egypt.jpg" />  
+                        <div class="content">Egypt</div> 
+                    </a> 
+                </div>  
+
+                <div class="showSlide fade">  
+                    <a href="Europe.html">
+                       <img src="../images/Europe/Europe.jpg" />  
+                       <div class="content">Europe</div>  
+                    </a>
+                </div> 
+                 <div class="showSlide fade">  
+                    <a href="Hawaii.html">
+                       <img src="../images/Hawaii/Hawaii.jpg" />  
+                       <div class="content">Hawaii</div>  
+                    </a>
+                </div> 
+                
+                <div class="showSlide fade">  
+                    <a href="India.html">
+                       <img src="../images/India/India.jpg" />  
+                       <div class="content">India</div>  
+                    </a>
+                </div>  
+
+               <!-- Navigation arrows -->  
+               <a class="left" onclick="nextSlide(-1)">❮</a>  
+               <a class="right" onclick="nextSlide(1)">❯</a>  
+            </div>  
+        </div>
+  
+        <main>
+           <form id="search_form" action="#">
+                <filter>
+
+                    <ul>
+                        <li>Search</li>
+                        <li><input type="search" id="search"> </li>
+                    </ul>
+                    <ul>
+                        <li>Filter by Location</li>
+                        <li>
+                            <select id="location">
+                                <option value="">Select Location</option>
+                                <option>North America</option>
+                                <option>South America</option>
+                                <option>Middle East</option>
+                                <option>Europe</option>
+                                <option>Asia</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><button type="button" onclick="clearForm()">Clear Filter!</button></li>
+                    </ul>
+
+
+                </filter>
+            </form>
+            <div class="new_row">
+                <div class="width_50">
+                    <h1 class="des_title">Explore best destinations</h1>
+                </div>
+            </div>
+            <table class="dest_table">
+                <tr>
+                    <td><img src="../images/Brazil/Brazil.jpg">
+                        <p>Brazil</p>
+                        <li><a href="Brazil.html"><button onclick="myMove()">Explore!</button></a></li>
+                    </td>
+                    <td><img src="../images/Egypt/Egypt.jpg">
+                        <p>Egypt</p>
+                        <li><a href="Egypt.html"><button onclick="myMove()">Explore!</button></a></li>
+                    </td>
+                    <td><img src="../images/Europe/Europe.jpg">
+                        <p>Europe</p>
+                        <li><a href="Europe.html"><button onclick="myMove()">Explore!</button></a></li>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../images/Hawaii/Hawaii.jpg">
+                        <p>Hawaii</p>
+                        <li><a href="Hawaii.html"><button onclick="myMove()">Explore!</button></a></li>
+                    </td>
+                    <td><img src="../images/India/India.jpg">
+                        <p>India</p>
+                        <li><a href="India.html"><button onclick="myMove()">Explore!</button></a></li>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    
+            
+        <!-- <pagination>
+            </pagination> -->
+        <!-- footer section -->
+        <footer>
+            <quote>Take memories, leave footprints!</quote>
+            <copyright> &copy; ITS - G6 All Rights Reserved!</copyright>
+            <social-media>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_logo.png" alt="insta_url"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_logo.png" alt="facebook_url "></a>
+                <a href="https://twitter.com/ " target="_blank"><img src="../images/twitter_logo.png" alt="twitter_url"></a>
+            </social-media>
+        </footer>
+    </div>
+    <script type="text/javascript" src="../javascript/common.js"></script>
+</body>
+
+</html>

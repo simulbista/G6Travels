@@ -1,0 +1,79 @@
+input, select {
+    padding: 5px;
+    border: 1px solid #049edb;
+    border-radius: 5px;
+}
+button{
+    padding: 8px 15px;
+    background: #049edb;
+    border: 1px solid #ccc;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#page_title{
+        border-bottom: 2px solid #049edb;
+}
+.new_row{
+    width: 100%;
+}
+.social_list{
+        display: inline-flex;
+    list-style-type: none;
+}
+.social_list li{
+    padding-right: 15px;
+}
+.width_50{
+    width: 50%;
+    margin: 0 auto;
+}
+.w_50{
+    width: 50%;
+    float: left;
+}
+.w_70{
+    width: 70%;
+    float: left;
+}
+.w_30{
+    width: 30%;
+    float: left;
+}
+.w_25{
+    width: 25%;
+    float: left;
+}
+.plr_30{
+    padding: 0px 30px;
+}
+.change_btn{
+        box-shadow: 1px 5px 10px #888;
+    margin-bottom: 10px;
+}
+.width_100{width: 100%}
+.margin_top_20{margin-top: 20px}
+.dest_table td img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.dest_table p{
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #049edb;
+}
+.dest_table li{list-style: none;}
+.des_title{
+        text-align: center;
+    color: #3181a1;
+    box-shadow: 1px 3px 10px #888;
+    padding: 10px;
+    border-radius: 5px;
+}
+filter{
+        border-top: 2px solid #909533;
+    border-bottom: 2px solid #909533;
+}
