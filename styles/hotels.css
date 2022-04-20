@@ -1,4 +1,4 @@
-/*css for task 7*/
+/*css /
 body {
     padding: 0px;
     margin: 0px;
@@ -21,23 +21,24 @@ body {
     align-items: center;
     text-align: center;
     color: #fff;
-    padding: 5px;
+    padding: 25px;
     flex-direction: column;
     align-content: center;
+    box-sizing: content-box;
 }
 
 .main-heading{
     color:white;
     line-height: 2;
     text-shadow: 1px 1px 1rem rgba(0,0,0,5);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 
 }
 
 .title{
-    font-size: 3rem;
+    font-size: 3.2rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-align: center;
 }
 
@@ -163,8 +164,8 @@ body {
     flex-direction: row;
     justify-content: left;
 }
-.book-form button{
-    display: flex;
+.form-item button{
+    text-align: center;
     margin: 18px 0 0 0;
     background: var(--dark);
     color:white;
@@ -220,7 +221,132 @@ body {
 
 
 
+/* header styling start */
+
+header {
+    background-image: linear-gradient(#84bcdc, #fff);
+    height: 80px;
+    padding: 2px 50px 0 50px;
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS', sans-serif;
+}
+
+header identity {
+    float: left;
+}
+
+header identity img {
+    height: 70px;
+}
+
+header identity h1 {
+    float: right;
+    padding-top: 20px;
+    font-size: 17px;
+    color: #049edb;
+}
+header sign-in {
+    float: right;
+    display: flex;
+    width: 10em;
+    justify-content: space-between;
+    background-color: #049edb;
+    border-radius: 25px;
+    padding: 0 10px;
+    color: white;
+    font-size: 1.1em;
+    box-sizing: content-box;
+}
+
+header sign-in img {
+    float: right;
+    width: 2em;
+    height: 2em;
+    align-self: center;
+}
+header sign-in h2 a{
+    text-decoration: none;
+}
+
+header sign-in h2:hover {
+    color: #000;
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+    background-color: #049edb;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+menu ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+menu ul li {
+    width: 250px;
+    padding-top: 1em;
+    float: left;
+    text-align: center;
+}
+
+menu ul li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+menu ul li a:hover {
+    color: black;
+}
+
+menu ul li a:focus {
+    color: black;
+}
 
 
 
+/* header styling end */
+
+
+/* footer styling start */
+
+footer {
+    text-align: center;
+    height: 30px;
+    color: #000;
+    font-weight: 800;
+    background-color: #049edb;
+    padding: 5px 50px 0px 50px;
+}
+
+footer quote {
+    float: left;
+}
+
+footer copyright {
+    float: left;
+    margin-left: 350px;
+}
+
+footer social-media a img {
+    float: right;
+    width: 20px;
+    height: auto;
+    padding-left: 10px;
+}
+
+footer social-media a img:hover {
+    width: 25px;
+    transition: ease-in;
+}
+
+
+/* footer styling end */
 

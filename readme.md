@@ -76,6 +76,17 @@
 4)Nilangkumar Joshi
 
 5)Niral Chirag Patel
+ 
+    a)Index page 
+
+
+    b)Testomonial page
+
+
+    c)contact page
+
+
+    d)about us
 
 6)Simul Bista
 

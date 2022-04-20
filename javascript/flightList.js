@@ -1,12 +1,12 @@
 //handle go back
 const goBackToSearchFlights = () => {
     localStorage.clear();
-    window.location.replace("/pages/bookFlight.html");
+    window.location.replace("../pages/bookFlight.html");
 };
 //handle view flight redirection and set localstorage with selected flight data
 const viewFlight = (flightData) => {
     localStorage.setItem("flightData",JSON.stringify(flightData));
-    window.location.replace("/pages/flightDetail.html");
+    window.location.replace("../pages/flightDetail.html");
 };
 const flightData = [
     {
