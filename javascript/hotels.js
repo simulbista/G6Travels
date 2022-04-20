@@ -9,5 +9,5 @@ function myFunction() {
   }
   
   function Redirect1() {
-    window.location.assign("http://127.0.0.1:5500/pages/bookHotels.html");
+    window.location.assign("../pages/bookHotels.html");
   }

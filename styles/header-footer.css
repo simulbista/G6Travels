@@ -191,8 +191,6 @@ footer social-media a img:hover {
     menu ul {
         display: none;
         width: 100%;
-    }
-    menu ul {
         flex-direction: column;
         align-items: center;
         padding-top: 2em;
@@ -222,10 +220,10 @@ footer social-media a img:hover {
     }
 }
 
-@media(min-width: 1440px)  and (max-width: 1441px){
-    footer{
+@media(min-width: 1440px) and (max-width: 1441px) {
+    footer {
         position: fixed;
         bottom: 0;
-        width: 100%; 
+        width: 100%;
     }
 }
