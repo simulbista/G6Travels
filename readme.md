@@ -4,11 +4,14 @@
 
 ## Group Name: G6
 
+## Deployed url
+https://simulbista.github.io/G6Travels/pages/index.html
 ## Tasks
 
 - Search Flight, flight list and flight details - Mira
 - Food, Blog and Restaurants pages - Simul
 - Hotel search, hotel booking and manage booking - Anna
+- Signin , Signup and Edit Profile - Devinder
 ## Learning curve and challenges
 - responsive web design
 - javascript
@@ -35,7 +38,10 @@
     - Javascript Used: The manage booking form validation is created using javascript.
 
 
-2)Devinder Singh Sirohi
+2)Devinder Singh Sirohi 
+   - Create a Sign Up Page for the new user.
+   - Create a Sign Page for a user
+   - Create Edit Profile Page .
 
 3)Mira Philip
 
