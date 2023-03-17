@@ -73,6 +73,7 @@
 
 
 4)Simul Bista
+
     - [x] Food Page
         - [x] It showcases different types of cuisines such as Indian, Continental and many more.
         - [x] Javascript Usage: The 5 min countdown timer for the discount offer has been implemented using javascript.
