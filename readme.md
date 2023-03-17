@@ -84,7 +84,8 @@
     - [x] Blog Page
         - [x] It includes 2 blog posts with titles, images, texts and like buttons(one using javascript and the other using css). 
         - [x] It also includes a create account form.
-        - [x] avascript Usage: The "create account" form validation has been done using javascroipt. And the changing of the look of the first like button on click has               been also done through the same.
+        - [x] Javascript Usage: The "create account" form validation has been done using javascript. 
+        - [x] And the changing of the look of the first like button on click has been also done through javascript.
         
 5)Nilangkumar Joshi
 6)Niral Chirag Patel
